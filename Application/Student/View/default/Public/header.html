@@ -1,0 +1,81 @@
+<div class="container-fluid whole-div">
+
+  <div class="row wwf-row-nav">
+    <div class="col-md-10 col-md-offset-1">
+
+      <nav class="navbar  wwf-nav" role="navigation">
+        <div class="container-fluid wwf-nav-container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{:u('Home/Index/index')}">万工教育</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li >
+                <a href="{:u('Home/Course/index')}">学习课程</a>
+              </li>
+              <li>
+                <a href="{:u('Home/Teacher/index')}">名师风采</a>
+              </li>
+              <li>
+                <a href="{:u('Home/Wenti/index')}">常见问题</a>
+              </li>
+              <li>
+                <a href="{:u('Student/MyClass/index')}">我的课堂</a>
+              </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+              <if condition="is_login()">
+
+                <li class="dropdown">
+
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="padding-left:0;padding-right:0">
+                    {:session('user_auth.nickname')} <b class="caret"></b>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><p style="color:#999;font-size:12px" class="text-center">正在使用万工帐号登录</p></li>
+                    <li role="presentation" class="divider"></li>
+                    <li>
+                      <a href="{:U('Teacher/Course/index')}">教师</a>
+                    </li>
+                    
+                    <li>
+                      <a href="{:U('Student/setting/setInfo')}">设置</a>
+                    </li>
+                    
+                  </li>
+                  <li role="presentation" class="divider"></li>
+                  <li>
+                    <a href="{:U('Home/User/logout')}">退出</a>
+                  </li>
+                </ul>
+              </li>
+
+              <else/>
+              <li>
+                <a href="{:u('Home/user/login')}">登录</a>
+              </li>
+              <li>
+                <a href="{:u('Home/user/register')}">注册</a>
+              </li>
+
+            </ul>
+          </if>
+
+        </div>
+        <!-- /.navbar-collapse --> </div>
+      <!-- /.container-fluid --> </nav>
+
+  </div>
+
+</div>

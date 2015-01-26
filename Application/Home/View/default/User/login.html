@@ -1,0 +1,148 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style">
+  
+
+     <style type="text/css">
+
+      .ta-qq, .ta-weibo, .ta-alipay, .ta-facebook { 
+background-image: url('__IMG__/sprite_all_82.png'); }
+
+.third-area a {
+  
+display: inline-block;
+  font-size: 0;
+  height: 28px;
+  margin: 0 4px;
+  overflow: hidden;
+  width: 28px;
+  zoom: 1;
+}
+#third_area .ta-qq { 
+background-position: 0  0 ;
+ }
+.ta-weibo { 
+background-position: -30px 0 ; 
+}
+.ta-alipay { 
+background-position: 0 -30px ; 
+}
+.ta-facebook{
+  background-position: -30px -30px;
+}
+
+
+      </style>
+
+</block>
+
+<block name="body">
+
+<div class="row" style="margin-top:40px">
+
+  <div class="col-md-6 col-md-offset-3">
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+    <h3 class="panel-title">登录</h3>
+    </div>
+    <div class="panel-body">
+      <!--警告框-->
+  <div id="errorMsg" style="display:none" class="alert alert-warning alert-dismissible" role="alert">
+
+</div>
+
+    <form id="login-form"  method="post" action="__SELF__" >
+
+      <ul class="list-group">
+      <li class="list-group-item">
+
+        <div class="form-group">
+        <label class="control-label" for="login_username">帐号</label>
+        <div class="controls">
+          <input class="form-control" id="login_username" type="text" name="username" value=""  style="height:43px" datatype="s3-20" errormsg="请输入用户名" nullmsg="用户名不能为空">
+          <div class="help-block">请输入用户昵称</div>
+        </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+
+        <div class="form-group">
+        <label class="control-label" for="login_password">密码</label>
+        <div class="controls">
+          <input class="form-control" id="login_password" type="password" name="password"  data-explain="" style="height:43px">
+          <div class="help-block" >请输入密码</div>
+        </div>
+        </div>
+      </li>
+      <li class="list-group-item">
+
+        <div class="form-group">
+        <div class="controls">
+          <span class="checkbox mtm pull-right">
+          <label>
+            <input type="checkbox" name="_remember_me" checked="checked">记住密码</label>
+          </span>
+          <button type="submit" class="btn btn-fat btn-primary btn-large">登录</button>
+        </div>
+        </div>
+
+      </li>
+      <li class="list-group-item">
+        <div class="ptl">
+        <a href=" {:u('User/findPWD')}" >
+        <span class="text-muted mhs">找回密码</span> </a>
+        <span>|</span>
+     <a href="javascript:void(0)" id="otherLogin"><span class="text-muted mhs">其他方式登陆</span></a>
+        <!-- <a href=" { : u('User/register'); }">  <span class="text-muted">还没有注册帐号？</span></a> -->
+        </div>
+      </li>
+
+   
+      <li class="list-group-item">
+        <a href=" {:u('User/register')}" class="btn btn-success" style="width:100%" id="registerBtn"> 立即注册万工账号</a>
+
+        <div class="third-area" id="third_area" style="display:none">
+        <a class="ta-qq" href="#" id="miniLogin_third_qq" target="_blank" title="QQ">QQ</a>
+        <a class="ta-weibo" href="#" id="miniLogin_third_sina" target="_blank" title="weibo">weibo</a>
+        <a class="ta-alipay" href="#" id="miniLogin_third_alipay" target="_blank" title="alipay">alipay</a>
+        <a class="ta-facebook" href="#" id="miniLogin_third_facebook" target="_blank" title="facebook">facebook</a>
+        <em class="corner"></em><em class="corner-inner"></em></div>
+
+
+      </li>
+
+      </ul>
+
+    </form>
+    </div>
+  </div>
+
+  </div>
+
+</div>
+
+</block>
+
+<block name="script">
+
+<script type="text/javascript">
+
+var demo = $("#login-form").Validform(
+   { ajaxPost: true,
+    tiptype:function(msg,o,cssctl) {var objtip=$("#errorMsg"); objtip.html(msg); objtip.show(); }
+
+     }
+   
+   );
+
+$("#otherLogin").click(function() {
+  $("#third_area").toggle();
+$("#registerBtn").toggle();
+});
+
+
+</script>
+
+</block>

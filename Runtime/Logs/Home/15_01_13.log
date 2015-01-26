@@ -1,0 +1,2327 @@
+[ 2015-01-13T09:02:13+08:00 ] ::1 /
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0031s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0043s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0049s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0041s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0038s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047845s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047981s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002058s ]
+
+[ 2015-01-13T09:03:38+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000348s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021457s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000268s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001631s ]
+
+[ 2015-01-13T09:03:39+08:00 ] ::1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0039s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421111019 AND ( deadline = 0 OR deadline > 1421111019 ) ORDER BY `level` DESC  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000074s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017441s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2015-01-13T09:03:40+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421111020 AND ( deadline = 0 OR deadline > 1421111020 ) ORDER BY `level` DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019261s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2015-01-13T09:03:41+08:00 ] ::1 /index.php?s=/Home/Course/index.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020750s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2015-01-13T09:03:42+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0015s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028204s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028337s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2015-01-13T09:03:45+08:00 ] ::1 /index.php?s=/Home/index/about/id/9.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `id` = 9 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='9' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`name`,`title`,`pid`,`sort`,`list_row`,`meta_title`,`keywords`,`description`,`template_index`,`template_lists`,`template_detail`,`template_edit`,`model`,`model_sub`,`type`,`link_id`,`allow_publish`,`display`,`reply`,`check`,`reply_model`,`extend`,`create_time`,`update_time`,`status`,`icon`,`groups` FROM `wg_category` WHERE `id` = 42 LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE `status` = 1 AND `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020445s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2015-01-13T09:03:53+08:00 ] ::1 /index.php?s=/Home/Index/xieyi/id/10.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `id` = 10 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='10' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001299s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2015-01-13T09:03:56+08:00 ] ::1 /index.php?s=/Home/Index/xieyi/id/11.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `id` = 11 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='11' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000193s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018685s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000797s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2015-01-13T09:04:01+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000900s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000997s ]
+
+[ 2015-01-13T09:04:03+08:00 ] ::1 /index.php?s=/Home/user/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022525s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000186s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000864s ]
+
+[ 2015-01-13T09:04:03+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022335s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000852s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2015-01-13T09:13:21+08:00 ] ::1 /
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0023s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000913s ]
+
+[ 2015-01-13T10:57:50+08:00 ] 127.0.0.1 /
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0030s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0005s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033959s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000711s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001629s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001767s ]
+
+[ 2015-01-13T10:57:53+08:00 ] 127.0.0.1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022325s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000781s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2015-01-13T10:58:00+08:00 ] 127.0.0.1 /index.php?s=/Home/user/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0097s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'lisi' LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0009s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421117880',`last_login_ip`='2130706433' WHERE `uid` = 24 [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0016s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','24','2130706433','member','24','1421117880','heihei在2015-01-13 10:58登录了后台') [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 24 AND `create_time` > 1421031480 LIMIT 1   [ RunTime:0.0021s ]
+
+[ 2015-01-13T10:58:01+08:00 ] 127.0.0.1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2015-01-13T11:03:05+08:00 ] 127.0.0.1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0024s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000309s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033493s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000505s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000967s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001090s ]
+
+[ 2015-01-13T11:21:40+08:00 ] 127.0.0.1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014338s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014428s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000603s ]
+
+[ 2015-01-13T11:21:41+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000770s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000871s ]
+
+[ 2015-01-13T11:21:47+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-01-13T11:21:52+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000779s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001520s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0107s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421119312',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0016s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1421119312','admin在2015-01-13 11:21登录了后台') [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1421032912 LIMIT 1   [ RunTime:0.0029s ]
+
+[ 2015-01-13T11:21:53+08:00 ] 127.0.0.1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000186s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001622s ]
+
+[ 2015-01-13T11:29:43+08:00 ] 127.0.0.1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421119783 AND ( deadline = 0 OR deadline > 1421119783 ) ORDER BY `level` DESC  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000168s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000313s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001617s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001855s ]
+
+[ 2015-01-13T11:29:44+08:00 ] 127.0.0.1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421119784 AND ( deadline = 0 OR deadline > 1421119784 ) ORDER BY `level` DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000251s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000835s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-01-13T11:29:47+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000897s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001049s ]
+
+[ 2015-01-13T11:30:00+08:00 ] 127.0.0.1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011363s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000192s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2015-01-13T11:30:02+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001218s ]
+
+[ 2015-01-13T11:30:12+08:00 ] 127.0.0.1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0098s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'lisi' LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0030s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421119812',`last_login_ip`='2130706433' WHERE `uid` = 24 [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0018s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','24','2130706433','member','24','1421119812','heihei在2015-01-13 11:30登录了后台') [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 24 AND `create_time` > 1421033412 LIMIT 1   [ RunTime:0.0023s ]
+
+[ 2015-01-13T11:30:13+08:00 ] 127.0.0.1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000178s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025778s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001225s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001364s ]
+
+[ 2015-01-13T11:30:26+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/index.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2015-01-13T11:30:27+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020353s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000764s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2015-01-13T11:30:28+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/addLearn.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0101s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0018s ]
+SQL: INSERT INTO `wg_member_course` (`uid`,`cid`) VALUES ('24','41') [ RunTime:0.0011s ]
+
+[ 2015-01-13T11:30:29+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0030s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000825s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2015-01-13T11:30:34+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000906s ]
+
+[ 2015-01-13T11:34:52+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021524s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021612s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001216s ]
+
+[ 2015-01-13T11:34:54+08:00 ] 127.0.0.1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000165s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036747s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000294s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001076s ]
+
+[ 2015-01-13T11:34:57+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0032s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025499s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025580s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001096s ]
+
+[ 2015-01-13T11:35:49+08:00 ] 127.0.0.1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-01-13T13:18:45+08:00 ] ::1 /
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0028s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037500s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037614s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000703s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001199s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001349s ]
+
+[ 2015-01-13T13:18:48+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000148s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000778s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000878s ]
+
+[ 2015-01-13T13:18:51+08:00 ] ::1 /index.php?s=/Home/Course/detailLesson/id/93.html
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course_lesson` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_course_videos` WHERE ( 1=1 AND id='50' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `lesson_id` = 93 AND `uid` = 24 ORDER BY create_time DESC LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+NOTIC: [8] Undefined variable: spark_config /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/8a8e57904ccdd66ea797cf9a2e1c9027.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2015-01-13T13:18:54+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0023s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023252s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2015-01-13T13:19:05+08:00 ] ::1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000127s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000500s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000554s ]
+
+[ 2015-01-13T13:19:06+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022710s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000779s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000877s ]
+
+[ 2015-01-13T13:19:13+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000698s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0017s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-01-13T13:19:19+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0100s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421126359',`last_login_ip`='0' WHERE `uid` = 1 [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0015s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','0','member','1','1421126359','admin在2015-01-13 13:19登录了后台') [ RunTime:0.0009s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1421039959 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2015-01-13T13:19:20+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032243s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000842s ]
+
+[ 2015-01-13T13:19:28+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023963s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000224s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001119s ]
+
+[ 2015-01-13T13:19:30+08:00 ] ::1 /index.php?s=/Home/Course/index.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0025s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000182s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000867s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2015-01-13T13:19:31+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421126371 AND ( deadline = 0 OR deadline > 1421126371 ) ORDER BY `level` DESC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2015-01-13T13:19:32+08:00 ] ::1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421126371 AND ( deadline = 0 OR deadline > 1421126371 ) ORDER BY `level` DESC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000786s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2015-01-13T13:19:33+08:00 ] ::1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421126373 AND ( deadline = 0 OR deadline > 1421126373 ) ORDER BY `level` DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016154s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000954s ]
+
+[ 2015-01-13T13:19:34+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421126374 AND ( deadline = 0 OR deadline > 1421126374 ) ORDER BY `level` DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019326s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2015-01-13T13:19:34+08:00 ] ::1 /index.php?s=/Home/Course/index.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0023s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018394s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000222s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000958s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001099s ]
+
+[ 2015-01-13T13:20:12+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-01-13T13:21:51+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2015-01-13T13:22:37+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0028s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000261s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2015-01-13T13:22:40+08:00 ] ::1 /index.php?s=/Home/Course/detailLesson/id/94.html
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_course_lesson` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course_videos` WHERE ( 1=1 AND id='51' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0015s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `lesson_id` = 94 AND `uid` = 1 ORDER BY create_time DESC LIMIT 3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Undefined variable: spark_config /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/8a8e57904ccdd66ea797cf9a2e1c9027.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018734s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018805s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000888s ]
+
+[ 2015-01-13T13:22:42+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000180s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024640s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000917s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001028s ]
+
+[ 2015-01-13T13:22:43+08:00 ] ::1 /index.php?s=/Home/Course/detailLesson/id/93.html
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_course_lesson` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_course_videos` WHERE ( 1=1 AND id='50' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `lesson_id` = 93 AND `uid` = 1 ORDER BY create_time DESC LIMIT 3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+NOTIC: [8] Undefined variable: spark_config /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/8a8e57904ccdd66ea797cf9a2e1c9027.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000783s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000885s ]
+
+[ 2015-01-13T13:22:45+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 1 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019373s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019444s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000817s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000934s ]
+
+[ 2015-01-13T13:26:17+08:00 ] ::1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012985s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-01-13T13:26:18+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000286s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000972s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2015-01-13T13:26:42+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0013s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'lisi' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0015s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421126802',`last_login_ip`='0' WHERE `uid` = 24 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0043s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0012s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','24','0','member','24','1421126802','heihei在2015-01-13 13:26登录了后台') [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 24 AND `create_time` > 1421040402 LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-01-13T13:26:43+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0025s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0005s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021428s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021513s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000787s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000898s ]
+
+[ 2015-01-13T13:32:51+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0022s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029527s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-01-13T13:33:02+08:00 ] ::1 /index.php?s=/Home/Course/detailLesson/id/94.html
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_course_lesson` WHERE `id` = 94 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course_videos` WHERE ( 1=1 AND id='51' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0019s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `lesson_id` = 94 AND `uid` = 24 ORDER BY create_time DESC LIMIT 3   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000161s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000281s ]
+NOTIC: [8] Undefined variable: spark_config /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/8a8e57904ccdd66ea797cf9a2e1c9027.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000256s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000330s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001108s ]
+
+[ 2015-01-13T13:33:04+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000266s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000978s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001148s ]
+
+[ 2015-01-13T13:34:54+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000212s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001066s ]
+
+[ 2015-01-13T13:34:57+08:00 ] ::1 /index.php?s=/Home/Course/detailLesson/id/93.html
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_course_lesson` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='41' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_course_videos` WHERE ( 1=1 AND id='50' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `lesson_id` = 93 AND `uid` = 24 ORDER BY create_time DESC LIMIT 3   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000294s ]
+NOTIC: [8] Undefined variable: spark_config /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/8a8e57904ccdd66ea797cf9a2e1c9027.php 第 211 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021515s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000335s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001197s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001369s ]
+
+[ 2015-01-13T13:38:25+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/41.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0015s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 41 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000230s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027647s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027724s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000507s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001543s ]
+
+[ 2015-01-13T13:39:19+08:00 ] ::1 /index.php?s=/Home/Course/index.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0005s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001307s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001513s ]
+
+[ 2015-01-13T13:39:20+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421127560 AND ( deadline = 0 OR deadline > 1421127560 ) ORDER BY `level` DESC  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020573s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001208s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2015-01-13T13:39:21+08:00 ] ::1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421127561 AND ( deadline = 0 OR deadline > 1421127561 ) ORDER BY `level` DESC  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018076s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000720s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000844s ]
+
+[ 2015-01-13T13:39:26+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0022s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022829s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000912s ]
+
+[ 2015-01-13T13:39:29+08:00 ] ::1 /index.php?s=/Home/Course/detail/id/46.html
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 46 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0016s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member_course` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_member_course` WHERE `uid` = 24 AND `cid` = 46 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: subtitle /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Home/a77ce601443794d56da432a33147a96f.php 第 148 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023158s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001089s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001256s ]
+
+[ 2015-01-13T13:42:49+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0024s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421127768 AND ( deadline = 0 OR deadline > 1421127768 ) ORDER BY `level` DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000805s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000921s ]
+
+[ 2015-01-13T13:46:28+08:00 ] ::1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000139s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013858s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2015-01-13T13:46:29+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022802s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2015-01-13T13:46:33+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020110s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000794s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000897s ]
+
+[ 2015-01-13T13:46:53+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019058s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-01-13T13:46:56+08:00 ] ::1 /index.php?s=/Home
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0017s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029694s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001151s ]
+
+[ 2015-01-13T13:51:10+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000910s ]
+
+[ 2015-01-13T13:51:15+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0002s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028884s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000772s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000875s ]
+
+[ 2015-01-13T13:51:25+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000775s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-01-13T13:52:31+08:00 ] ::1 /index.php?s=/Home/user/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000160s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024116s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000803s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-01-13T13:52:38+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020177s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000949s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001057s ]
+
+[ 2015-01-13T13:52:44+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001121s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0093s ]
+SQL: SELECT `type`,`name`,`value` FROM `wg_config` WHERE `status` = 1  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_ucenter_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_ucenter_member` WHERE `username` = 'lisi' LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0004s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421128364',`last_login_ip`='0' WHERE `uid` = 24 [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 24 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0016s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','24','0','member','24','1421128364','heihei在2015-01-13 13:52登录了后台') [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 24 AND `create_time` > 1421041964 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2015-01-13T13:52:45+08:00 ] ::1 /index.php?s=/Home/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_course_lunbo` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`subheading`,`url`,`seq`,`create_time`,`uid`,`update_time`,`status` FROM `wg_course_lunbo` WHERE `status` = 1 ORDER BY seq DESC  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`status`,`category_id`,`price`,`expiry_day`,`show_student_num_type`,`income`,`lesson_num`,`rating`,`rating_num`,`tags`,`small_picture`,`middle_picture`,`large_picture`,`about`,`student_num`,`uid`,`create_time`,`start_time`,`picture`,`end_time`,`seq`,`publish_status`,`update_time` FROM `wg_course` WHERE `status` IN (1) ORDER BY seq DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0018s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='43' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='44' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='45' )  [ RunTime:0.0003s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE ( 1=1 AND cid='46' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000924s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2015-01-13T13:53:02+08:00 ] ::1 /index.php?s=/Home/Wenti/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 41 AND `create_time` < 1421128382 AND ( deadline = 0 OR deadline > 1421128382 ) ORDER BY `level` DESC  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='5' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016886s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000867s ]
+
+[ 2015-01-13T13:53:03+08:00 ] ::1 /index.php?s=/Home/Teacher/index.html
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`uid`,`name`,`title`,`category_id`,`group_id`,`description`,`root`,`pid`,`model_id`,`type`,`position`,`link_id`,`cover_id`,`display`,`deadline`,`attach`,`view`,`comment`,`extend`,`level`,`create_time`,`update_time`,`status` FROM `wg_document` WHERE `status` = 1 AND `pid` = 0 AND `category_id` = 40 AND `create_time` < 1421128383 AND ( deadline = 0 OR deadline > 1421128383 ) ORDER BY `level` DESC  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_document_article` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_picture` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='3' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_document_article` WHERE ( 1=1 AND id='4' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_picture` WHERE ( 1=1 AND id='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000125s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000936s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001055s ]
+
+[ 2015-01-13T13:53:09+08:00 ] ::1 /index.php?s=/Home/User/logout.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2015-01-13T13:53:10+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019609s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001271s ]
+
+[ 2015-01-13T13:53:11+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018996s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000197s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000915s ]
+
+[ 2015-01-13T13:53:16+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000159s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019187s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-01-13T13:53:24+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020944s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001431s ]
+
+[ 2015-01-13T13:53:26+08:00 ] ::1 /index.php?s=/Home/user/register.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000316s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024751s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2015-01-13T13:53:30+08:00 ] ::1 /index.php?s=/Home/user/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000201s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000270s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000889s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2015-01-13T13:53:35+08:00 ] ::1 /index.php?s=/Home/User/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000221s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+

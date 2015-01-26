@@ -1,0 +1,93 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style"></block>
+
+<block name="body">
+
+  <div class="row" style="margin-top:40px">
+
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">重设密码</h3>
+        </div>
+        <div class="panel-body">
+            <!--警告框-->
+      <div id="errorMsg" style="display:none" class="alert alert-warning alert-dismissible" role="alert">
+  
+</div>
+
+          <form id="login-form"  method="post" action="__SELF__" >
+
+            <ul class="list-group">
+              <li class="list-group-item">
+
+                <div class="form-group">
+                  <label class="control-label" for="login_username">新密码</label>
+                  <div class="controls">
+                    <input class="form-control" id="login_username" type="text" name="password" value=""  style="height:43px" datatype="s3-20" errormsg="请输入新密码" nullmsg="密码不能为空">
+                    <div class="help-block">请输入新密码</div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+
+                <div class="form-group">
+                  <label class="control-label" for="login_email">确认新密码</label>
+                  <div class="controls">
+                    <input class="form-control" id="login_email" type="text" name="confirmpassword"  data-explain="" style="height:43px">
+                    <div class="help-block" >请输入新密码</div>
+                  </div>
+                </div>
+              </li>
+              <li class="list-group-item">
+
+                <div class="form-group">
+                  <div class="controls">
+
+                    <button type="submit" class="btn btn-fat btn-primary btn-large">保存</button>
+                  </div>
+                </div>
+
+              </li>
+
+
+            </ul>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</block>
+
+<block name="script">
+
+  <script type="text/javascript">
+
+  var demo = $("#login-form").Validform(
+    {
+      ajaxPost:false,
+
+      tiptype:function(msg,o,cssctl){
+      var objtip=$("#errorMsg");
+      
+
+      objtip.html(msg);
+
+      
+      objtip.show();
+    },
+
+
+    });
+ 
+
+  </script>
+
+</block>

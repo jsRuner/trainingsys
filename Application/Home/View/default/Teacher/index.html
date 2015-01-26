@@ -1,0 +1,102 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style">
+  
+
+</block>
+<block name="header">
+  <div class="row wwf-row-ban">
+    
+    <div class="col-md-8 col-md-offset-2">
+      
+      
+        <img src="__IMG__/ban2.jpg">
+      
+    </div>
+
+
+  </div>
+</block>
+<block name="body">
+
+
+  <!-- 教学模式的介绍 -->
+<div class="row teacher-md">
+  <div class="col-md-8 col-md-offset-2 col-sm-12" >
+    <div class="row">
+      <h2>教学模式</h2>
+    </div>
+
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <img src="__IMG__/php_jiangshi_jiaoxuemoshi_nr.png">
+
+      </div>
+      <div class="col-md-4 col-md-offset-2">
+        <ul class="teacher-md-info">
+          <li><span><img src="__IMG__/teacher_a.png"></span>专业讲师教授，设计实训方案</li>
+          <li><span><img src="__IMG__/teacher_b.png"></span>学校机房24小时免费开放</li>
+          <li><span><img src="__IMG__/teacher_c.png"></span>职业素质课贯穿，就业有方法</li>
+          <li><span><img src="__IMG__/teacher_d.png"></span>例子、实验、演示教学、加深记忆</li>
+        </ul>
+
+      </div>
+    </div>
+    
+  </div>
+
+
+</div>
+
+
+<div class="row teacher-md">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="row">
+      <h2>教师介绍</h2>
+    </div>
+
+  
+
+    
+
+     <div class="row">
+
+
+
+      <volist name="teacherList" id="vo" mod="2">
+
+        <div class="col-md-6">
+          <span>
+            <img src="{$vo['picture']['path']}">
+          </span>
+          
+            
+          <h3 style="display:block">{$vo.title}</h3>
+        {$vo['article']['content']}
+          
+      </div>
+
+      <eq name="mod" value="1">
+
+      </div>
+      <div class="row">
+        
+
+
+      </eq>
+        
+
+
+      </volist>
+      
+    </div>
+
+ 
+    
+    
+  </div>
+</div>
+
+</block>

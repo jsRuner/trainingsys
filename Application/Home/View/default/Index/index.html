@@ -1,0 +1,103 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style"></block>
+<block name="header">
+  <div class="row wwf-carousel">
+    <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+           <volist name="lunboList" id="vo">
+             <li data-target="#carousel-example-generic" data-slide-to="{$key}" <if condition="$key eq 0">class="active"</if> ></li>
+           </volist>
+          
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+
+          <volist name="lunboList" id="vo">
+
+            
+           
+              
+
+             <div class="item <if condition="$key eq 0">active</if>" >
+
+              
+
+            <div class="container wwf-item">
+          
+              <h1 style="font-size:50px;margin-top:50px">{$vo.title}</h1>
+              <p style="font-size:24px">{$vo.subheading}</p>
+              <a class="btn btn-primary btn-lg" style="margin-top:50px" href="{$vo.url}" target="_blank">查看</a>
+            </div>
+
+
+
+          </div>
+           
+
+
+
+          </volist>
+      
+         
+         
+        </div>
+       
+    </div>
+  </div>
+</div>
+</block>
+<block name="body">
+<div class="row wwf-courselist">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="row wwf-itemrow">
+
+      <volist name="CourseList" id="vo">
+
+        <div class="col-md-3 wwf-course-one">
+        <a href="{:U('Home/Course/detail',array('id'=>$vo['id']))}" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv" align="center">
+              <img src="{$vo['large_picture']}" style="height:167px" alt="{$vo['title']}" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$vo['title']}</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 {$vo['student_num']} 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+        
+
+
+      </volist>
+
+
+
+     
+    </div>
+    
+    
+  </div>
+</div>
+
+<if condition="is_login()"
+
+><else/>
+
+
+<div class="row wwf-register">
+  
+  <div class="col-md-1 col-md-offset-5">
+    
+    <a href="{:u('Student/Login/register')}" class="btn btn-success">加入万工课堂</a>
+  </div>
+</div>
+</if>
+</block>

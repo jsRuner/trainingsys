@@ -1,0 +1,8 @@
+[ 2015-01-08T16:02:21+08:00 ] 127.0.0.1 /index.php?s=/Teacher/Course/refuse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Application\Teacher\Controller\CourseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0046s ]
+SQL: UPDATE `wg_course` SET `status`='0' WHERE `id` = 43 [ RunTime:0.0399s ]
+

@@ -1,0 +1,480 @@
+<extend name="Base:common"/>
+
+<block name="style">
+
+  <link rel="stylesheet" type="text/css" href="__CSS__/student.css"></block>
+
+<block name="header">
+
+  <div class="row my-ban">
+    <div class="col-md-8 col-md-offset-1">
+      <!-- <img src="#">
+      -->
+      <div >
+
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}" /> 
+</span> 
+        <h1>
+         {:get_nickname()}
+          <small>{:get_time_in_day()}</small>
+        </h1>
+      </div>
+
+      <p>人类被赋予了一种工作，那就是精神的成长。
+      </p>
+
+
+
+    </div>
+
+  </div>
+
+</block>
+
+<block name="body">
+
+  <div class="row wwf-body-row">
+
+    <div class="col-md-3 col-md-offset-1">
+
+      <div class="panel panel-default">
+     
+
+        <div class="panel-heading">
+          <h3 class="panel-title">设置</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="{:u('Setting/setInfo')}">资料设置</a>
+            </li>
+            <li class="list-group-item">
+              <a href="{:u('Setting/setPhoto')}">修改头像</a>
+            </li>
+             <li class="list-group-item">
+              <a href="{:u('User/updateNickName')}">修改昵称</a>
+            </li>
+            <li class="list-group-item">
+              <a href="{:u('User/updatePassword')}">修改密码</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-7">
+
+      <div class="panel panel-default panel-col lesson-manage-panel">
+        <div class="panel-heading">编辑资料</div>
+        <div class="panel-body">
+
+           <form   action="__SELF__" method="post" >
+
+          <ul class="list-group">
+            <li class="list-group-item">
+
+              <div class="form-group">
+                <label class="control-label" for="profile_nickname">昵称</label>
+                <div class="controls">
+                  <input type="text" style="height:43px" id="profile_nickname" value="{:get_nickname()}" class="form-control"  readonly>
+                  <div class="help-block" style="display:none;"></div>
+                </div>
+
+
+              </div>
+            </li>
+            <li class="list-group-item">
+
+              <div class="form-group">
+                <label class="control-label" for="profile_truename">姓名</label>
+                <div class="controls">
+                  <input type="text" style="height:43px" id="profile_truename" name="real_name" class="form-control" data-widget-cid="widget-1" data-explain="" value="{$memberData['real_name']}">
+                  <div class="help-block" style="display:none;"></div>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+
+              <div class="form-group">
+                <label class=" control-label">性别</label>
+                <div class="controls radios" >
+                  <div id="profile_gender" >
+
+                    <input type="radio" id="profile_gender_1" name="sex"  value="1"   <if condition="$memberData['sex'] eq 1" >checked</if>
+                  >
+                  <label for="profile_gender_1"  >男</label>
+                  <input type="radio" id="profile_gender_0" name="sex" value="0"  <if condition="$memberData['sex'] neq 1" >checked</if>
+                >
+                <label for="profile_gender_0"   >女</label>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+
+          <div class="form-group">
+            <label class=" control-label" for="profile_idcard">身份证号</label>
+            <div class="controls radios">
+              <input type="text" style="height:43px" id="profile_idcard" name="card" class="form-control" value="{$memberData['card']}" data-widget-cid="widget-6" data-explain="">
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="form-group">
+            <label for="profile_mobile" class=" control-label">手机号码</label>
+            <div class="controls">
+              <input type="text" style="height:43px" id="profile_mobile" name="mobile" class="form-control" data-widget-cid="widget-5" data-explain="" value="{$memberData['mobile']}">
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+
+        </li>
+
+            <li class="list-group-item">
+                <div class="form-group">
+                    <label for="profile_phone" class=" control-label">电话号码</label>
+                    <div class="controls">
+                        <input type="text" style="height:43px" id="profile_phone" name="telephone" class="form-control" data-widget-cid="widget-5" data-explain="" value="{$memberData['telephone']}">
+                        <div class="help-block" style="display:none;"></div>
+                    </div>
+                </div>
+
+            </li>
+
+            <li class="list-group-item">
+
+                <div class="form-group">
+                    <label for="profile_qq" class=" control-label">QQ</label>
+                    <div class="controls">
+                        <input type="text" style="height:43px" id="profile_qq" name="qq" class="form-control" data-widget-cid="widget-2" data-explain="" value="{$memberData['qq']}">
+                        <div class="help-block" style="display:none;"></div>
+                    </div>
+                </div>
+            </li>
+
+        <!--<li class="list-group-item">-->
+          <!--<div class="form-group form-forIam-group form-notStudent-group">-->
+            <!--<label class=" control-label">公司</label>-->
+            <!--<div class="controls">-->
+              <!--<input type="text" style="height:43px" id="profile_company" name="company" class="form-control" value="{$studentInfo['company']}">-->
+              <!--<div class="help-block" style="display:none;"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        <!--</li>-->
+
+        <!--<li class="list-group-item">-->
+          <!--<div class="form-group form-forIam-group form-notStudent-group">-->
+            <!--<label class=" control-label">职业</label>-->
+            <!--<div class="controls">-->
+              <!--<input type="text" style="height:43px" id="profile_job" name="work" class="form-control" value="{$studentInfo['work']}">-->
+              <!--<div class="help-block" style="display:none;"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        <!--</li>-->
+
+        <li class="list-group-item">
+          <div class="form-group">
+            <label class=" control-label">自我介绍</label>
+
+            <div class="controls">
+              <textarea cols="20" rows="4" class="form-control" name="about" style="width:475px">{$memberData['about']}</textarea>
+
+            </div>
+
+          </div>
+
+        </li>
+
+        <!--<li class="list-group-item">-->
+
+          <!--<div class="form-group">-->
+            <!--<label class=" control-label">个人主页</label>-->
+            <!--<div class="controls">-->
+              <!--<input type="text" style="height:43px" id="profile_site" name="url" class="form-control" data-widget-cid="widget-4" data-explain="" value="{$studentInfo['url']}">-->
+              <!--<div class="help-block" style="display:none;"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+        <!--</li>-->
+
+        <!--<li class="list-group-item">-->
+          <!--<div class="form-group">-->
+            <!--<div class=" control-label">-->
+              <!--<label for="weibo">微博</label>-->
+            <!--</div>-->
+            <!--<div class="controls">-->
+              <!--<input type="text" style="height:43px" id="weibo" name="weibo" class="form-control" data-widget-cid="widget-3" data-explain="" value="{$studentInfo['weibo']}">-->
+              <!--<div class="help-block" style="display:none;"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        <!--</li>-->
+
+        <!--<li class="list-group-item">-->
+          <!--<div class="form-group">-->
+            <!--<label class=" control-label">微信</label>-->
+            <!--<div class="controls">-->
+              <!--<input type="text" style="height:43px" id="profile_weixin" name="weixin" class="form-control" value="{$studentInfo['weixin']}">-->
+              <!--<div class="help-block" style="display:none;"></div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+        <!--</li>-->
+
+
+
+        <li class="list-group-item">
+
+
+
+
+
+          <div class="form-group ">
+
+              <label for="profile_province" class=" control-label">出生省份</label>
+            <div class="controls">
+
+
+              <select class="form-control" name="birth_province" id="profile_province" onChange="initCity(this.options[this.options.selectedIndex].value)" >
+
+                 <!-- <option>请选择省份</option> -->
+                  <if condition="$memberData['birth_province'] eq '请选择'">
+                  <option value="请选择">请选择</option>
+                      <else/>
+                  <volist name="provinceList" id="province" >
+                      <option value="{$province['provinceid']}" <if condition="$province['provinceid'] eq $memberData['birth_province']" >selected</if> >{$province['provincename']}</option>
+
+                  </volist>
+                  </if>
+
+
+              </select>
+
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-group-item">
+            <div class="form-group">
+                <label for="profile_city" class=" control-label">出生城市</label>
+                <div class="controls">
+
+                    <select class="form-control" name="birth_city" id="profile_city" >
+
+                        <if condition="$memberData['birth_city'] eq '请选择'">
+                            <option value="请选择">请选择</option>
+                            <else/>
+                            <volist name="cityList" id="city" >
+                                <if condition="$city['cityid'] eq $memberData['birth_city']" >
+
+                                    <option value="{$city['cityid']}">{$city['cityname']}</option>
+                                </if>
+
+                            </volist>
+                        </if>
+
+
+                    </select>
+
+                    <div class="help-block" style="display:none;"></div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </li>
+
+        <li class="list-group-item">
+
+          <div class="form-group">
+            <label for="profile_school" class=" control-label">毕业学校</label>
+            <div class="controls">
+
+              <select class="form-control"  id="profile_school" onChange="initUnivs(this.options[this.options.selectedIndex].value)">
+
+                 <!-- <option>请选择学校地区</option> -->
+
+                <volist name="univsProvincesList" id="vo" >
+                  <option value="{$vo['id']}"  >{$vo['name']}</option>
+
+                </volist>
+                
+              </select>
+
+                <select class="form-control" name="univs" id="profile_univs"  onChange="initDepartment(this.options[this.options.selectedIndex].value)">
+
+                    <!-- <option>请选择学校</option> -->
+
+                    <volist name="univsList" id="vo" >
+                        <option value="{$vo['id']}" <if condition="$vo['id'] eq $memberData['univsid']" >selected</if> >{$vo['name']}</option>
+
+                    </volist>
+
+                </select>
+              
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+          
+
+        </li>
+
+        <li class="list-group-item">
+
+          <div class="form-group">
+            <label for="profile_department" class=" control-label">毕业院系</label>
+            <div class="controls">
+
+              <select class="form-control" name="department" id="profile_department"  >
+                
+
+
+                <volist name="departmentList" id="vo" >
+                  <option value="{$vo['id']}" <if condition="$vo['id'] eq $memberData['departmentid']" >selected</if> >{$vo['name']}</option>
+
+                </volist>
+
+              </select>
+              
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+          
+
+        </li>
+
+        <li class="list-group-item">
+
+          <div class="form-group">
+            <label for="profile_profession" class=" control-label">所学专业</label>
+            <div class="controls">
+             <input type="text" value="11" id="profile_profession" name="profession" class="form-control">
+
+
+
+              <div class="help-block" style="display:none;"></div>
+            </div>
+          </div>
+          
+
+        </li>
+
+
+        <li class="list-group-item">
+          <button  type="submit" class="btn btn-primary">保存</button>
+            <input type="hidden" value="{$memberData['uid']}" name="uid">
+
+
+        </li>
+
+      </ul>
+    </form>
+
+    <!-- </form> -->
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</block>
+
+<block name="script">
+
+<script type="text/javascript">
+//点击后初始化
+function initCity(data) {
+    //alert(data);
+    if(data == '请选择'){
+        document.getElementById("profile_city").options.length = 0;
+        var p;
+
+            p = new Option( '请选择','请选择');
+            document.getElementById("profile_city").options[0] = p;
+
+        return;
+    }
+    var m ="{:u('setting/getCity')}";
+    $.post(m,{ProvinceID:data},function(msg){
+        //alert(msg);
+        document.getElementById("profile_city").options.length = 0;
+        var p;
+        for (var i = msg.length - 1; i >= 0; i--) {
+            p = new Option( msg[i].cityname,msg[i].cityid);
+            document.getElementById("profile_city").options[i] = p;
+        };
+    });
+}
+
+    //初始化高校
+function initUnivs(data) {
+    //alert(data);
+    if(data == '请选择'){
+        document.getElementById("profile_univs").options.length = 0;
+        var p;
+
+        p = new Option( '请选择','请选择');
+        document.getElementById("profile_univs").options[0] = p;
+
+        return;
+    }
+    var m ="{:u('setting/getUnivs')}";
+    $.post(m,{pid:data},function(msg){
+        //alert(msg);
+        document.getElementById("profile_univs").options.length = 0;
+        var p;
+        for (var i = msg.length - 1; i >= 0; i--) {
+            p = new Option( msg[i].name,msg[i].id);
+            document.getElementById("profile_univs").options[i] = p;
+        };
+    });
+}
+
+    //初始化院系
+function initDepartment(data) {
+    //alert(data);
+    if(data == '请选择'){
+        document.getElementById("profile_department").options.length = 0;
+        var p;
+
+        p = new Option( '请选择','请选择');
+        document.getElementById("profile_department").options[0] = p;
+
+        return;
+    }
+    var m ="{:u('setting/getDepartment')}";
+    $.post(m,{uid:data},function(msg){
+
+        if(msg===null){
+            alert('获得数据为空');
+            return;
+        }
+        //alert(msg);
+        document.getElementById("profile_department").options.length = 0;
+        var p;
+        for (var i = msg.length - 1; i >= 0; i--) {
+            p = new Option( msg[i].name,msg[i].id);
+            document.getElementById("profile_department").options[i] = p;
+        };
+    });
+}
+
+
+   
+
+        </script>
+
+</block>

@@ -1,0 +1,65 @@
+/**
+ * 2014年12月10日 14:23:09
+ * 基础样式
+ * 范围：Teacher模块
+ */
+
+/*最外围的div样式*/
+.wrap{
+	min-height:600px; 
+	height:100%; 
+	height:auto;
+}
+
+/*导航条的样式(预留)*/
+.mynav{
+	border-radius: 0px; /*消除圆角*/
+}
+
+/*底部的样式*/
+
+.footer{height:35px; margin-top: 10px; font-size:12px; background:#FFF; width:100%;}
+.footer ul{margin-left:5px; float:right;}
+.footer ul li{float:left; color:#CCC; margin-left:5px; list-style:none;}
+.footer ul li a{margin-right:8px;}
+.footer .credit{float:right; }
+
+/*左侧菜单栏样式*/
+.sideBar{
+
+}
+
+/*搜索条*/
+.mysearch{
+width: 182px;
+}
+
+/*表格文字居中*/
+.table{
+	border: 1px solid #ddd;
+}
+.table th , .table td{
+	text-align: center;
+}
+
+/*列表的分页*/
+.mypage{
+	/*height: 29px;	*/
+}
+
+/*修改thinkphp的分页样式 基于bootstrap*/
+
+.current,.prev,.next,.num{
+	position: relative;
+float: left;
+padding: 6px 12px;
+margin-left: -1px;
+line-height: 1.42857143;
+color: #428bca;
+text-decoration: none;
+background-color: #fff;
+border: 1px solid #ddd;
+}
+.current{
+	color: red;
+}

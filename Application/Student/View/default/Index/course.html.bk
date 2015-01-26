@@ -1,0 +1,272 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style"></block>
+<block name="header">
+  <div class="row wwf-carousel">
+    <div class="col-md-12">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container wwf-item" style="background:url('http://res.jisuanke.com/img/banner/140801_3.svg') no-repeat right -10px;">
+              <h2>是编程小白？对于编程完全没概念？</h2>
+              <p>编程初学入门常识是为你专门准备的，速来！</p>
+              <a class="btn" href="http://www.jisuanke.com/class/info/18" target="_blank">进入编程初学入门常识</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container wwf-item" style="background:url('http://res.jisuanke.com/img/banner/140801_3.svg') no-repeat right -10px;">
+              <h2>是编程小白？对于编程完全没概念？</h2>
+              <p>编程初学入门常识是为你专门准备的，速来！</p>
+              <a class="btn" href="http://www.jisuanke.com/class/info/18" target="_blank">进入编程初学入门常识</a>
+            </div>
+          </div>
+          <div class="item">
+            <div class="container wwf-item" style="background:url('http://res.jisuanke.com/img/banner/140801_3.svg') no-repeat right -10px;">
+              <h2>是编程小白？对于编程完全没概念？</h2>
+              <p>编程初学入门常识是为你专门准备的，速来！</p>
+              <a class="btn" href="http://www.jisuanke.com/class/info/18" target="_blank">进入编程初学入门常识</a>
+            </div>
+          </div>
+        </div>
+        <!-- Controls -->
+        <!--  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      -->
+    </div>
+  </div>
+</div>
+</block>
+<block name="body">
+<div class="row wwf-courselist">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="row wwf-itemrow">
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            
+              <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row wwf-itemrow">
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            
+              <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="row wwf-itemrow">
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-courseitem">
+          <div class="media">
+            
+              <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="#" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="__STATIC__/jisuanke/img/java_meitu_1.jpg" alt="编程初学入门常识课程" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">编程初学入门常识</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 10175 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+    
+  </div>
+</div>
+<div class="row wwf-register">
+  
+  <div class="col-md-1 col-md-offset-5">
+    
+    <a href="#" class="btn btn-success btn-default">加入万工课堂</a>
+  </div>
+</div>
+</block>

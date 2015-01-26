@@ -1,0 +1,277 @@
+<extend name="Base:common"/>
+
+<block name="side"></block>
+
+<block name="body">
+  <div class="es-row-wrap container-gap course-cover">
+
+    <div class="row row-5-7 course-cover-heading">
+      <div class="col-sm-5 picture hidden-xs">
+        <img src="{$courseInfo.smallPicture}" class="img-responsive"></div>
+      <div class="col-sm-7 info">
+        <h1 class="title">{$courseInfo.title}</h1>
+        <div class="subtitle"></div>
+        <div class="stats">
+          <p>
+            价　格：
+            <span class="money-num" style="font-size:16px;">{$courseInfo.price}</span>
+          </p>
+         <!--  <p>
+            评　价：
+            <span class="stars-4">&nbsp;</span>
+            <span class="rating-num">4.0分</span>
+            <a class="rating-user-num show-course-review-pane" href="javascript:">(1人评价)</a>
+          </p> -->
+          <p>
+            学员数：
+            <span class="member-num">{$courseInfo.studentNum}</span>
+            <span class="member-text">人</span>
+          </p>
+          <p></p>
+        </div>
+        <div class="actions clearfix">
+          <div class="pull-left">
+            <a class="btn btn-primary btn-fat" id="course-buy-btn" data-toggle="modal" data-target="#myModal">加入学习</a>
+
+          </div>
+
+          <!-- <div class="pull-right ">
+
+            <a class="btn btn-link" href="#" style="display:none;"> <i class="glyphicon glyphicon-play-circle"></i>
+              免费体验
+            </a>
+            <a class="btn btn-link " id="favorite-btn" href="javascript:" data-url="/web/course/2/favorite"> <i class="glyphicon glyphicon-bookmark"></i>
+              收藏课程
+            </a>
+            <a class="btn btn-link" id="unfavorite-btn" href="javascript:" data-url="/web/course/2/unfavorite" style="display:none;">
+              <i class="glyphicon glyphicon-bookmark"></i>
+              已收藏
+            </a>
+            <a class="btn btn-link" href="#" style="display:none;">
+              <i class="glyphicon glyphicon-gift"></i>
+              赠送
+            </a>
+
+          </div> -->
+          <!-- <div class="share pull-right clearfix" data-bdtext="">
+            <div class="dropdown pull-right" style="padding:1px;">
+              <a class="dropdown-toggle btn btn-link" href="javascript:" id="dropdownMenu1" data-toggle="dropdown">
+                <span class="glyphicon glyphicon-share"></span>
+                分享到
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <div class="bdsharebuttonbox bdshare-button-style0-24" style="padding:1px;" data-bd-bind="1416533841096">
+                  <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间" style="margin:3px 1px 2px 6px;"></a>
+                  <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博" style="margin:3px 2px 2px 6px;"></a>
+                  <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信" style="margin:3px 2px 2px 6px;"></a>
+                  <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网" style="margin:3px 2px 2px 6px;"></a>
+                  <a href="#" class="bds_more" data-cmd="more" style="margin:3px 2px 2px 6px;"></a>
+                </div>
+              </ul>
+            </div>
+          </div> -->
+        </div>
+
+      </div>
+    </div>
+
+    <div class="row row-8-4">
+      <div class="col-md-8">
+
+        <!-- <div class="course-nav-tabs">
+          <ul class="nav mbl nav-pills affix-top" id="course-nav-tabs">
+            <li class="active">
+              <a href="#course-about-pane" class="btn-index" data-anchor="#course-about-pane">课程介绍</a>
+            </li>
+            <li>
+              <a href="#course-list-pane" class="btn-index" data-anchor="#course-list-pane">课程列表</a>
+            </li>
+            <li class="">
+              <a href="#course-review-pane" class="btn-index" data-anchor="#course-review-pane">
+                课程评价
+                <span class="badge">1</span>
+              </a>
+            </li>
+          </ul>
+        </div> -->
+
+        <div id="course-about-pane" class="panel panel-default ">
+          <div class="panel-heading">
+            <h3 class="panel-title">课程介绍</h3>
+          </div>
+          <div class="panel-body">
+            <span class="text-muted">{$courseInfo.info}</span>
+
+          </div>
+        </div>
+
+        <div id="course-list-pane" class="panel panel-default ">
+          <div class="panel-heading">
+            <h3 class="panel-title">课时列表</h3>
+          </div>
+          <div class="panel-body">
+            <div class="course-item-list-multi">
+              <ul class="row">
+
+
+              <volist name="lessonInfo" id="vo">
+
+                <li class="col-md-4 clearfix item">
+                  <a class="item-object item-object-audio" href="#modal" data-toggle="modal" data-url="/web/course/2/lesson/5/preview" title="{$vo.title}">
+                    <span class="item-icon"></span>
+                    <span class="item-length">{:isPublish($vo['status'])}</span>
+                  </a>
+                  <div class="item-body">
+                    <div class="item-seq-name">课时{$key+1}:</div>
+                    <div class="item-title">
+                      <a href="#modal" data-toggle="modal" data-url="/web/course/2/lesson/5/preview" title="{$vo.title}">{$vo.title}</a>
+                    </div>
+
+                    <div class="text-muted" style="font-weight:normal;font-size:12px;color:#aaa;"></div>
+
+                  </div>
+                </li>
+
+
+              </volist>
+
+
+                <!-- <li class="col-md-4 clearfix item">
+                  <a class="item-object item-object-audio" href="#modal" data-toggle="modal" data-url="/web/course/2/lesson/6/preview" title="2">
+                    <span class="item-icon"></span>
+                    <span class="item-length">未发布</span>
+                  </a>
+                  <div class="item-body">
+                    <div class="item-seq-name">课时2:</div>
+                    <div class="item-title">
+                      <a href="#modal" data-toggle="modal" data-url="/web/course/2/lesson/6/preview" title="2">2</a>
+                    </div>
+
+                    <div class="text-muted" style="font-weight:normal;font-size:12px;color:#aaa;"></div>
+
+                  </div>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div id="course-review-pane" class="panel panel-default ">
+          <div class="panel-heading">
+            <h3 class="panel-title">课程评价</h3>
+          </div>
+          <div class="panel-body">
+            <div id="course-review-pane-show" data-url="/web/course/2/review/list">
+
+              <ul class="media-list">
+                <li class="media">
+                  <a class="user-link user-avatar-link pull-left" href="/web/user/1">
+                    <img src="/web/files/user/2014/10-14/104653dd558f953747.jpg?4.0.3"></a>
+                  <div class="media-body">
+                    <div class="media-heading">
+                      <a href="/web/user/1">admin</a>
+
+                      <span class="bullet">•</span>
+                      <span class="text-muted">2014-11-13</span>
+                    </div>
+
+                    <div class="media-content">
+                      <div>
+                        <span class="stars-4"></span>
+                      </div>
+                      11
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div> -->
+      </div>
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">课程教师</h3>
+          </div>
+          <div class="panel-body">
+
+            <div class="teacher-carousel teacher-carousel-onlyone">
+              <div class="carousel slide" id="teacher-carousel">
+                <div class="carousel-inner">
+                  <div class="item active" data-id="1">
+                    <a href="#">
+                      <img src="{$teacherInfo.photo}" class="avatar"></a>
+                  </div>
+                </div>
+                <a class="left carousel-control" href="#teacher-carousel" data-slide="prev">
+                  <span class="icon-prev"></span>
+                </a>
+                <a class="right carousel-control" href="#teacher-carousel" data-slide="next">
+                  <span class="icon-next"></span>
+                </a>
+              </div>
+              <div class="teacher-detail" id="teacher-detail">
+                <div class="teacher-item teacher-item-1 teacher-item-active">
+                  <div class="nickname">
+                    <a href="#">{$teacherInfo.realname}</a>
+                  </div>
+                  <div class="title">主管</div>
+                  <div class="divider"></div>
+     
+                  <!-- <div class="about">主管</div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+ <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="border:0px;BACKGROUND-COLOR: transparent;overflow-y:hidden;">
+  <div class="modal-dialog" style="width:100%;height:507px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">加入学习</h4>
+      </div>
+      <div class="modal-body">
+        <p>课程名称：{$courseInfo.title}</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary" onclick="addToLearn({$courseInfo['id']})">加入学习</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</block>
+
+<block name="script">
+  
+  <script type="text/javascript">
+
+  var url = "{:u('Home/index/addLearn')}";
+
+  function addToLearn (id) {
+    // body...
+    //alert(111);
+    $.post(url,{id:id},function(msg){
+      alert(msg.info);
+    });
+    
+  }
+
+
+
+  </script>
+</block>

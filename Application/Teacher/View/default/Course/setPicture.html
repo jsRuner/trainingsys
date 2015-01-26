@@ -1,0 +1,137 @@
+<extend name="Base:common" />
+<block name="body">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!--主体部分 左右分栏-->
+			<div class="col-md-3 sideBar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/index')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							返回列表
+						</a>
+					</li>
+					
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/editor',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							基本信息
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/setPicture',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课程图片
+						</a>
+					</li>
+					<li class="list-group-item"><a href="{:u('Teacher/Course/videos',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							视频列表
+						</a></li>
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/lessons',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课时列表
+						</a>
+					</li>
+					
+				</ul>
+
+			</div>
+			<!-- 右侧 -->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span>编辑课程封面图片</span>
+					</div>
+					<div class="panel-body">
+
+						<!--编辑头像-->
+
+         <script type="text/javascript">
+   function uploadevent(status){
+  
+        status += '';
+
+     switch(status){
+     case '1':
+
+     window.location.href = "{:u('Teacher/Course/setPicture',array('id'=>$courseData['id']))}";
+ 
+    
+  break;
+ 
+
+     
+     case '-1':
+    window.location.reload();
+     break;
+     default:
+     window.location.reload();
+    } 
+   }
+  </script>
+
+         <div id="altContent">
+
+<input  id="username" type="hidden" value="20130101232565" />
+
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"
+WIDTH="650" HEIGHT="450" id="myMovieName">
+<PARAM NAME=movie VALUE="__STATIC__/flash/avatar.swf">
+<PARAM NAME=quality VALUE=high>
+<PARAM NAME=bgcolor VALUE=#FFFFFF>
+
+<empty name="courseData['picture']">
+  
+
+
+<param name="flashvars" value="imgUrl=__STATIC__/flash/default.jpg&uploadUrl=__URL__/flashUpFile&uploadSrc=true&showCame=true&pCut=163|162&pSize=163|162|48|48|20|20&pData=163|162|48|48|20|20&showBe=true&showCa=true&id={$courseData['id']}" />
+<EMBED src="__STATIC__/flash/avatar.swf" quality=high bgcolor=#FFFFFF WIDTH="650" HEIGHT="450" wmode="transparent" flashVars="imgUrl=__STATIC__/flash/default.jpg&uploadUrl=__URL__/flashUpFile&uploadSrc=true&showCame=true&pCut=163|162&pSize=163|162|48|48|20|20&pData=163|162|48|48|20|20&showBe=true&showCa=true&id={$courseData['id']}"
+NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" allowScriptAccess="always"
+PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+</EMBED>
+
+<else/>
+
+<param name="flashvars" value="imgUrl={$courseData['picture']}&uploadUrl=__URL__/flashUpFile&uploadSrc=true&showCame=true&pCut=163|162&pSize=163|162|48|48|20|20&pData=163|162|48|48|20|20&showBe=true&showCa=true&id={$courseData['id']}" />
+<EMBED src="__STATIC__/flash/avatar.swf" quality=high bgcolor=#FFFFFF WIDTH="650" HEIGHT="450" wmode="transparent" flashVars="imgUrl={$courseData['picture']}&uploadUrl=__URL__/flashUpFile&uploadSrc=true&showCame=true&pCut=163|162&pSize=163|162|48|48|20|20&pData=163|162|48|48|20|20&showBe=true&showCa=true&id={$courseData['id']}"
+NAME="myMovieName" ALIGN="" TYPE="application/x-shockwave-flash" allowScriptAccess="always"
+PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer">
+</EMBED>
+
+
+</empty>
+
+</OBJECT>
+ 
+
+  </div>
+
+  <div id="avatar_priview"></div>
+         <!--编辑头像-->
+						
+				</div>
+			</div>
+		</div>
+			<!-- 右侧结束 -->
+		</div>
+	</div>
+
+	
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+	
+
+
+	</script>
+</block>
+

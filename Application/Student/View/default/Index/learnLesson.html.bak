@@ -1,0 +1,339 @@
+<html class="">
+  <!--<![endif]-->
+
+<head>
+  <include file="Public/head"/>
+</head>
+<body class="lesson-dashboard-page">
+  <div class="me-plugin" id="me_flash_2_container">
+    <embed id="me_flash_2" name="me_flash_2" play="true" loop="false" quality="high" bgcolor="#000000" wmode="transparent" allowscriptaccess="always" allowfullscreen="true" type="application/x-shockwave-flash" pluginspage="//www.macromedia.com/go/getflashplayer" src="http://localhost:8014/web/assets/libs/gallery2/mediaelement/2.14.2/flashmediaelement.swf" flashvars="id=me_flash_2&amp;isvideo=false&amp;autoplay=false&amp;preload=none&amp;width=1&amp;startvolume=0.8&amp;timerrate=250&amp;flashstreamer=&amp;height=1&amp;pseudostreamstart=start&amp;file=http%3A%2F%2Flocalhost%3A8014%2Fweb%2Fcourse%2F3%2Flesson%2F2%2Fmedia" width="1" height="1" scale="default" class="mejs-shim"></div>
+  <div class="me-plugin" id="me_flash_1_container"></div>
+  <div class="me-plugin" id="me_flash_0_container"></div>
+
+  <div class="navbar navbar-inverse site-navbar" id="site-navbar" data-counter-url="/web/user_remind_counter">
+    <div class="container">
+      <div class="container-gap">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/web/">EduSoho网络课堂</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav">
+            <li class="">
+              <a href="/web/teacher" class="">师资力量</a>
+            </li>
+            <li class="">
+              <a href="/web/page/questions" class="">常见问题</a>
+            </li>
+            <li class="">
+              <a href="/web/page/aboutus" class="">关于我们</a>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/web/my">我的课程</a>
+            </li>
+            <li>
+              <a href="/web/search">
+                <span class="glyphicon glyphicon-search"></span>
+              </a>
+            </li>
+            <li>
+              <a href="/web/notification" class="badge-container notification-badge-container">
+                <span class="glyphicon glyphicon-bullhorn hidden-lt-ie8"></span>
+                <span class="visible-lt-ie8">通知</span>
+              </a>
+            </li>
+            <li>
+              <a href="/web/message/" class="badge-container message-badge-container">
+                <span class="glyphicon glyphicon-envelope hidden-lt-ie8"></span>
+                <span class="visible-lt-ie8">私信</span>
+              </a>
+            </li>
+            <li class="visible-lt-ie8">
+              <a href="/web/settings/">admin</a>
+            </li>
+            <li class="dropdown hidden-lt-ie8">
+              <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                admin <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/web/user/1"> <i class="glyphicon glyphicon-home"></i>
+                    我的主页
+                  </a>
+                </li>
+                <li>
+                  <a href="/web/settings/"> <i class="glyphicon glyphicon-cog"></i>
+                    帐号设置
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="/web/admin/">
+                    <i class="glyphicon glyphicon-dashboard"></i>
+                    管理后台
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="/web/logout">
+                    <i class="glyphicon glyphicon-off"></i>
+                    退出
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse --> </div>
+    </div>
+  </div>
+
+  <div id="content-container" class="container">
+    <div class="container lesson-dashboard lesson-dashboard-open" id="lesson-dashboard" data-course-id="3" data-course-uri="/web/course/3" data-dashboard-uri="/web/course/3/learn" data-hide-media-lesson-learn-btn="" data-widget-cid="widget-0">
+      <div class="dashboard-content">
+        <a class="btn btn-primary  nav-btn back-course-btn" href="{:u('Course/selectCourse',array('id'=>$currentcourseLessonInfo['courseId']))}">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          返回课程
+        </a>
+        <!-- <a class="btn btn-primary  nav-btn prev-lesson-btn" href="javascript:" data-role="prev-lesson" data-placement="right" title="" data-original-title="上一课时" style="display: none;">
+          <span class="glyphicon glyphicon-chevron-up" title="上一课时"></span>
+        </a> -->
+      <!--   <a class="btn btn-primary nav-btn next-lesson-btn" href="javascript:void(0)" data-role="next-lesson" data-placement="right" title="" data-original-title="下一课时">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+        </a> -->
+
+        <div class="dashboard-header">
+          <div class="pull-left title-group">
+            <span class="chapter-label" style="display: none;">
+              第
+              <span data-role="chapter-number"></span>
+              章
+            </span>
+            <span class="divider" style="display: none;">»</span>
+            <span class="chapter-label" style="display: none;">
+              第
+              <span data-role="unit-number"></span>
+              节
+            </span>
+            <span class="divider" style="display: none;">»</span>
+            <span class="item-label">
+              课时
+              <span data-role="lesson-number">{$currentcourseLessonInfo.seq}</span>
+            </span>
+            <span class="item-title" data-role="lesson-title">{$currentcourseLessonInfo.title}</span>
+          </div>
+        </div>
+
+        <div class="dashboard-body">
+          <div class="lesson-content" id="lesson-video-content" data-role="lesson-content" style="display: none;">
+            
+
+          </div>
+          <div class="watermarkEmbedded">
+            <input type="hidden" id="videoWatermarkEmbedded" value="0"></div>
+
+          <div class="lesson-content lesson-content-audio" id="lesson-audio-content" data-role="lesson-content" style="display: block;">
+            <div id="mep_2" class="mejs-container svg mejs-audio" style="width: 500px; height: 50px;">
+              <div class="mejs-inner">
+                <div class="mejs-mediaelement">
+                  <!-- <audio id="lesson-audio-player" width="500" height="50" src="/web/course/3/lesson/2/media" style="display: none;">
+                    <source src="/web/course/3/lesson/2/media" type="audio/mp3">
+                    </audio> -->
+
+                    <div id="a1"></div>
+                </div>
+                
+               
+                <div class="mejs-clear"></div>
+              </div>
+            </div>
+          </div>
+          <div class="lesson-content" id="lesson-swf-content" data-role="lesson-content" style="display: none;"></div>
+          <div class="lesson-content" id="lesson-iframe-content" data-role="lesson-content" style="display: none;"></div>
+          <div class="lesson-content lesson-content-text" id="lesson-text-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body"></div>
+          </div>
+          <div class="lesson-content lesson-content-text" id="lesson-live-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body"></div>
+          </div>
+          <div class="lesson-content lesson-content-text" id="lesson-unpublished-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body">当前课时正在编辑中，暂时无法观看。</div>
+          </div>
+          <div class="lesson-content lesson-content-text" id="lesson-alert-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body"></div>
+          </div>
+          <div class="lesson-content lesson-content-text" id="lesson-testpaper-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body"></div>
+          </div>
+          <div class="lesson-content lesson-content-text" id="lesson-ppt-content" data-role="lesson-content" style="display: none;">
+            <div class="lesson-content-text-body"></div>
+          </div>
+
+        </div>
+
+      <!--   <div class="dashboard-footer clearfix">
+
+          <div class="pull-right">
+            <button class="btn btn-primary finish-btn" data-role="finish-lesson" style="">
+              <span class="glyphicon glyphicon-unchecked"></span>
+              学过了
+            </button>
+          </div>
+
+        </div> -->
+      </div>
+
+      <div class="toolbar toolbar-open" id="lesson-dashboard-toolbar" data-widget-cid="widget-1">
+        <div class="toolbar-nav">
+
+          <ul class="toolbar-nav-stacked" id="lesson-toolbar-primary">
+            <li data-plugin="lesson" data-noactive="false" class="active">
+              <a href="#">
+                <span class="glyphicon glyphicon-th-list"></span>
+                目录
+              </a>
+            </li>
+            <!-- <li data-plugin="question" data-noactive="false">
+              <a href="#">
+                <span class="glyphicon glyphicon-question-sign"></span>
+                问答
+              </a>
+            </li>
+            <li data-plugin="note" data-noactive="false">
+              <a href="#">
+                <span class="glyphicon glyphicon-edit"></span>
+                笔记
+              </a>
+            </li>
+            <li data-plugin="material" data-noactive="false">
+              <a href="#">
+                <span class="glyphicon glyphicon-download-alt"></span>
+                资料
+              </a>
+            </li> -->
+          </ul>
+          <ul class="toolbar-nav-stacked" id="lesson-toolbar-secondary">
+            <li class="hide-pane" style="">
+              <a href="javascript:">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <div class="toolbar-pane-container">
+          <div data-pane="lesson" class="lesson-pane" data-widget-cid="widget-2" style="display: block;">
+            <div class="course-item-list-in-toolbar-pane ps-container">
+              <div class="course-item-list-wrap">
+                <ul class="course-item-list  " id="course-item-list">
+                  <volist name="courseLessonInfo" id="vo">
+
+                    <li class="item lesson-item lesson-item-learning lesson-item-2 hover-item clearfix <if condition="$vo['id'] eq $currentcourseLessonInfo['id']" >item-active</if>" data-id="2" data-num="1">
+
+                    <span class="type" >
+                      <span>{:getMinuteFromTime($vo[length])}分{:getSecondFromTime($vo[length])}秒</span>
+                      <span class="glyphicon glyphicon-volume-up"></span>
+                    </span>
+
+                    <span class="name ">课时{$key+1}</span>
+                    <span class="pie ">&nbsp;</span>
+                    <a class=" title"  href="{:u('Course/learnLesson',array('id'=>$vo['id'],'courseId'=>$vo['courseId']))}" title="111" data-id="2" data-experience="" style="white-space:nowrap; overflow:hidden; text-overflow: ellipsis;">{$vo.title}</a>
+                    <button class="btn btn-success btn-mini action">开始学习</button>
+                  </li>
+
+                  </volist>
+      
+
+
+                  
+                  
+                  
+                </ul>
+              </div>
+              <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 3px; width: 359px; display: none;">
+                <div class="ps-scrollbar-x" style="left: 0px; width: 0px;"></div>
+              </div>
+              <div class="ps-scrollbar-y-rail" style="top: 0px; right: 3px; height: 563px; display: none;">
+                <div class="ps-scrollbar-y" style="top: 0px; height: 0px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="modal" id="course-learned-modal" style="display:none;">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">学习进度提示</h4>
+          </div>
+          <div class="modal-body">
+            <p class="text-success">赞一个，这个课程你已经都学完啦，你可以再回顾一下或者去看看别的课程～～～</p>
+          </div>
+          <div class="modal-footer">
+            <a href="/web/course/3" class="btn btn-primary">回课程主页</a>
+          </div>
+        </div>
+        <!-- /.modal-content --> </div>
+      <!-- /.modal-dialog --> </div>
+    <!-- /.modal --> </div>
+  <!-- /container -->
+
+  <div class="site-footer container clearfix">
+
+    <ul class="site-footer-links"></ul>
+
+    <div class="text-gray" data-role="default-foot-bar">
+      Powered by
+      <a href="http://www.edusoho.com/" target="_blank">EduSoho v4.0.3</a>
+      ©2013-2014
+      <a href="http://www.howzhi.com/" target="_blank">好知网</a>
+      <div class="pull-right">&nbsp;</div>
+
+      <div class="pull-right mhs">
+        <a href="/web/archive/course">课程存档</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="login-modal" class="modal" data-url="/login/ajax"></div>
+  <div id="modal" class="modal"></div>
+
+
+
+  <script type="text/javascript" src="__STATIC__/CKplayer_v6.5/ckplayer/ckplayer.js" charset="utf-8"></script>
+
+  <script type="text/javascript">
+  var fileUrl = "{$currentcouseLessonView['hashId']}";
+ // alert(fileUrl);
+
+
+  var flashvars={
+    p:1,
+    e:1
+    };
+  
+  // var video=['http://movie.ks.js.cn/flv/other/1_0.mp4->video/mp4','http://www.ckplayer.com/webm/0.webm->video/webm','http://www.ckplayer.com/webm/0.ogv->video/ogg'];
+  var video=['/Uploads'+fileUrl+'->video/mp4','http://www.ckplayer.com/webm/0.webm->video/webm','http://www.ckplayer.com/webm/0.ogv->video/ogg'];
+  var support=['all'];
+  CKobject.embedHTML5('a1','ckplayer_a1',600,400,video,flashvars,support);
+  </script>
+
+
+</body>
+
+
+
+
+</html>

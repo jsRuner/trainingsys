@@ -1,0 +1,175 @@
+.whole-div{
+	background-color: #efefef;
+}
+.wwf-row-nav{
+	background-color: #fff;
+}
+.wwf-nav{
+	
+	border: 0px;
+	color: #333;
+}
+.wwf-nav-container{
+padding-top: 20px;
+}
+.wwf-carousel{
+	background-color: #11354b;
+	/*margin-top: 100px;*/
+}
+.wwf-item{
+	height: 350px;
+	color: #fff;
+}
+.wwf-item h2{
+	line-height: 1.1;
+color: inherit;
+margin-top: 40px;
+}
+
+.wwf-itemrow .wwf-course-one{
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
+
+
+.wwf-courselist{
+	background-color: #efefef;
+}
+.wwf-courseitem{
+	/*background: #2ecc71;*/
+  border: 0;
+  /*border-radius: 2px;*/
+  padding: 0;
+ }
+.media{
+ background: #fff;
+ border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px;
+  /*overflow: hidden;*/
+}
+.media .imgdiv{
+	margin-left: 5px;
+	margin-right: 5px;
+	overflow: hidden;
+}
+.media .media-body{
+	
+	height: 100px;
+	width: 185px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding: 0 auto;
+	/*margin-left:0 auto;*/
+}
+ .media-heading {
+  font-size: 18px;
+  color: #333;
+ 
+  margin-top: 20px;
+  
+  
+  height: 20px;
+  
+}
+.media-body p {
+	
+ 
+  color: #999
+}
+.wwf-itemrow{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.wwf-register{
+	background: #21465c;
+	margin-top: 30px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	
+}
+.wwf-register a{
+	width: 204px;
+	margin: 0 auto;
+}
+ul{
+	padding-left: 0
+}
+li{
+	padding-left: 0;
+	list-style: none;
+}
+.footer{
+	background-color: #11354b;
+	color: #ffffff;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	
+	
+}
+.footer h4{
+	font-weight: bold;
+}
+.footer li a{
+	color:rgba(178,193,212,0.92);
+}
+
+
+.wwf-row-ban{
+	background-color: #31B44B;
+}
+.wwf-row-ban img{
+	
+	margin: 0 auto;
+}
+
+
+/**
+ * 查看课程明细
+ * 
+ */
+.wwf-selectCourseBan{
+	background-color: #11354B;
+	color: #fff;
+}
+.wwf-selectCourseImg{
+	
+	margin: 20px 10px;
+	width: 190px;
+	overflow: hidden;
+}
+.wwf-selectCourseInfo{
+	margin-top: 30px;
+}
+
+.addCourseBtn{
+	margin-bottom: 20px;
+}
+
+/**
+ * 播放视频页面的css
+ * 
+ */
+
+#LearnCourseList{
+	margin-top: 100px;
+}
+#backCourse{
+	margin-top:80px;
+	margin-bottom: 100px;
+}
+
+
+/**
+ * 教师介绍页面的ul
+ */
+.teacher-md{
+	background-color: #fff;
+}
+.teacher-md-info{
+	width: 330px;
+height: 190px;
+font-size: 16px;
+line-height: 40px;
+margin-top: 10px;
+}

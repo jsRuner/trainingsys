@@ -1,0 +1,193 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style">
+
+  <link rel="stylesheet" type="text/css" href="__CSS__/student.css"></block>
+<block name="header">
+
+  <div class="row my-ban">
+    <div class="col-md-8 col-md-offset-1">
+      <!-- <img src="#">
+      -->
+      <div >
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}" /> 
+</span> 
+        <h1>
+          {:get_nickname()}
+          <small>{:get_time_in_day()}</small>
+        </h1>
+      </div>
+
+      <p>人类被赋予了一种工作，那就是精神的成长。</p>
+
+    </div>
+
+  </div>
+
+</block>
+<block name="body">
+
+  <div class="row my-body">
+    <div class="col-md-2 col-md-offset-1">
+
+      <div class="panel panel-default">
+  <div class="panel-heading">我的课堂</div>
+  <div class="panel-body">
+    <ul class="list-group">
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-list-alt"></span>
+          <a href="{:u('Student/MyClass/index')}">我的课程</a>
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-file"></span>
+          <a href="{:u('Student/Note/index')}">我的笔记</a>
+        </li>
+        <li class="list-group-item">
+          <span class="glyphicon glyphicon-pencil"></span>
+            <a href="{:u('student/Daily/index')}">我的日记</a>
+        </li>
+         <li class="list-group-item">
+          <span class="glyphicon glyphicon-book"></span>
+            <a href="__ROOT__/Kaoshi/index.php?exam-api-login&{$parstr}">我的考试</a>
+        </li>
+      </ul>
+  </div>
+</div>
+
+      
+    </div>
+    <div class="col-md-8">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          我的课程
+          <!-- <button type="button" class="btn btn-sm btn-success pull-right" id="managerBtn01">管理</button> -->
+          <a href="javascript:void(0)" class="pull-right" id="managerBtn01">管理</a>
+        </div>
+        <div class="panel-body">
+
+          <div class="row course-list">
+
+            <volist name="courseList['courses']" id="vo" mod="4">
+
+              <div class="col-md-3">
+                <span class="glyphicon glyphicon-remove pull-right deleBtn" style="display:none" va="{$vo['id']}" dt="{$vo['title']}" ></span>
+                <a href="{:U('Home/Course/detail',array('id'=>
+                  $vo['id']))}" class="wwf-courseitem">
+                  <div class="media">
+                    <div class="imgdiv" align=center>
+                      <img src="{$vo['middle_picture']}" alt="{$vo['title']}"  class="img-rounded"></div>
+
+                    <div class="media-body">
+                      <h4 class="media-heading text-center">{$vo['title']}</h4>
+                      <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                        开始学习
+                        <span class="glyphicon glyphicon-arrow-right"></span>
+
+                      </p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <eq name="mod" value="3"></div>
+              <div class="row course-list"></eq>
+
+            </volist>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 模态 -->
+  <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">操作确认：</h4>
+      </div>
+      <div class="modal-body">
+        <p>你确定删除课程？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="okBtn">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.mo
+  <!-- 模态结束 -->
+
+</block>
+
+<block name="script">
+ <script type="text/javascript">
+
+/*
+点击管理则出现可以删除的按钮
+ */
+$("#managerBtn01").bind('click',function(){
+  //显示删除按钮
+    $(".deleBtn").toggle();
+  });
+
+
+
+
+//模态窗口关闭后刷新页面
+  $('#myModal').on('hidden.bs.modal', function (e) {
+    window.location.reload();
+})
+
+  //通用的事件
+  function commonEvent(obj,info,url) {
+    // body...
+    //获得要删除的信息.这里获取标题
+    var msg = obj.attr('dt');
+    var cid = obj.attr('va');
+   // alert(id);
+    
+    //初始化模态中的信息
+    $(".modal-title").html(info+"操作确定：");
+    $(".modal-body p").html("你确定"+info+msg+"课程?");
+    $('#myModal').modal('show');
+    //给确定按钮绑定删除的事件
+    $("#okBtn").bind('click',function(){
+      
+      $(".modal-body p").html("正在执行"+info+"操作。。。");
+      $.post(url,{cid:cid},function(result){
+        //删除的反馈
+        $(".modal-body p").html("操作结果:<strong style='color:red;'>"+result.msg+"</strong>,2秒后窗口自动关闭!");
+        //3秒后关闭模态 todo
+        setTimeout("$('#myModal').modal('hide')",2000);
+        //关闭后刷新页面
+        //window.location.reload();
+        
+      });
+      
+    });
+    
+  }
+
+
+  //删除绑定事件
+  $(".deleBtn").bind('click',function(){
+    var url01 = "{:u('Student/MyClass/deleteCourse')}";
+    commonEvent($(this),'删除',url01);
+  });
+
+
+
+ </script>
+
+
+
+
+
+</block>

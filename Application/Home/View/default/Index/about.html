@@ -1,0 +1,44 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style"></block>
+<block name="header">
+
+	<div class="row wwf-row-ban">
+		
+		<!-- <div class="col-md-8 col-md-offset-2"> -->
+			
+			
+				<notempty name="info['icon']">
+							<img src="{$info.icon|get_cover='path'}"/>
+						</notempty>
+			
+		<!-- </div> -->
+
+
+	</div>
+  
+</block>
+<block name="body">
+
+
+	
+<div class="row">
+
+  <div class="col-md-10 col-md-offset-1">
+
+<h3>{$article['title']}</h3>
+
+<p>
+{$article['article']['content']}
+</p>
+
+
+         
+
+
+
+
+
+  </div>
+</div>
+</block>

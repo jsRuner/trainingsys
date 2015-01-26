@@ -1,0 +1,65 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style">
+  
+
+</block>
+<block name="header">
+  <div class="row wwf-row-ban">
+    
+    <div class="col-md-8 col-md-offset-2">
+      
+      
+        <img src="__IMG__/ban2.jpg">
+      
+    </div>
+
+
+  </div>
+</block>
+<block name="body">
+
+
+
+
+
+<div class="row teacher-md">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+    <div class="row">
+      <h3>常见问题</h3>
+    </div>
+
+  
+
+    
+
+     <div class="row">
+
+
+
+      <volist name="teacherList" id="vo" mod="1">
+
+       
+          
+            
+          <h4 style="display:block; color:red;">{$key+1}、{$vo.title}</h4>
+        {$vo['article']['content']}
+          
+     
+
+      
+
+
+     
+
+      </volist>
+      
+    </div>
+
+ 
+    
+    
+  </div>
+</div>
+
+</block>

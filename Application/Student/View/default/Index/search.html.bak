@@ -1,0 +1,36 @@
+<extend name="Base:common"/>
+
+<block name="side">
+	
+</block>
+
+<block name="body">
+	<div class="es-row-wrap container-gap">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header"><h1>搜索</h1></div>
+    </div>
+  </div>
+
+  <div class="row row-3-9">
+    <div class="col-md-9" style="min-height:300px;">
+
+      <form class="well well-sm" action="/edusoho/web/app.php/search">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" name="q" value="">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit">搜索</button>
+          </span>
+        </div>
+      </form>
+
+              <div class="empty">请输入搜索关键词！</div>
+          </div>
+    <div class="col-md-3">
+
+    </div>
+  </div>
+
+</div>
+	
+</block>

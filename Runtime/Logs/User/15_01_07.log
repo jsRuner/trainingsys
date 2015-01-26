@@ -1,0 +1,6 @@
+[ 2015-01-07T13:26:05+08:00 ] 127.0.0.1 /index.php?s=/User/resetMM/token/63bbf62d88c562646e89a399d4883793.html
+ERR: 无法加载控制器:ResetMM
+
+[ 2015-01-07T15:16:30+08:00 ] 127.0.0.1 /index.php?s=/User/emailVerifyUrl/id/24/token/bfbf7e8c139fb4ac59b7f0375933f400.html
+ERR: 无法加载控制器:EmailVerifyUrl
+

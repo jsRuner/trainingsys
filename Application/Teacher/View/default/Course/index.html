@@ -1,0 +1,176 @@
+<extend name="Base:common" />
+<block name="body">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!--主体部分 左右分栏-->
+			<div class="col-md-3 sideBar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/index')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课程列表
+						</a>
+					</li>
+					
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/add')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							发布课程
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 右侧 -->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<!--搜索-->
+						<div class="input-group mysearch">
+  <input type="text" class="form-control">
+  <span class="input-group-addon">搜索</span>
+</div>
+
+					</div>
+					<div class="panel-body">
+						
+						<!--表格区域-->
+						<table class="table table-hover">
+  <tr>
+  	<th><input type="checkbox" name="id[]"/></th>
+  	<th>课程标题</th><th>发布者</th><th>创建时间</th><th>状态</th><th>分类</th>
+  	<th>操作</th>
+  	
+
+  </tr>
+
+  <volist name="courseList" id="vo">
+  	<tr>
+  	<td><input type="checkbox" name="id[]" value="{$vo['id']}" /></td>
+  	<td>{$vo['title']}</td><td>{$vo['author']['nickname']}</td><td>{$vo['create_time'|date="Y-h-d h:i:s",###]}</td><td>{:getDataStatus($vo['status'])}</td><td>{$vo['category']['title']}</td>
+  	<td>
+  		
+  		<a href="{:U('Teacher/Course/editor',array('id'=>$vo['id']))}">编辑</a>
+  		<a href="javascript:void(0)" class="refuseBtn01"><if condition="$vo['status'] eq 0" >启用<else/>禁用</if> </a>
+  		<a href="javascript:void(0)" class="deleteBtn01">删除</a>
+  		
+  	</td>
+  	
+
+  </tr>
+  	
+  </volist>
+
+
+
+</table>
+
+<!--分页-->
+<nav class="mypage">
+  <ul class="pagination pagination-sm pull-right">
+    {$page}
+  </ul>
+</nav>
+
+
+
+
+
+					</div>
+					<div class="panel-footer text-center">提示：课程未发布用户无法学习，恢复为已发布状态即可。<b style="color:red">课程被删除后将再无法还原</b>。</div>
+				</div>
+
+			</div>
+			<!-- 右侧结束 -->
+		</div>
+	</div>
+
+	<!-- 模态 -->
+	<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">操作确认：</h4>
+      </div>
+      <div class="modal-body">
+        <p>你确定删除课程？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="okBtn">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.mo
+	<!-- 模态结束 -->
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+	//模态窗口关闭后刷新页面
+	$('#myModal').on('hidden.bs.modal', function (e) {
+		window.location.reload();
+})
+
+	//通用的事件
+	function commonEvent(obj,info,url) {
+		// body...
+		//获得要删除的信息.这里获取标题
+		var msg = obj.parent().parent().children()[1].innerHTML;
+		var id = obj.parent().parent().children().get(0).firstChild.value;//
+		
+		//初始化模态中的信息
+		$(".modal-title").html(info+"操作确定：");
+		$(".modal-body p").html("你确定"+info+msg+"课程?");
+		$('#myModal').modal('show');
+		//给确定按钮绑定删除的事件
+		$("#okBtn").bind('click',function(){
+			
+			$(".modal-body p").html("正在执行+"+info+"+操作。。。");
+			$.post(url,{id:id},function(result){
+				//删除的反馈
+				$(".modal-body p").html("操作结果:<strong style='color:red;'>"+result.msg+"</strong>,2秒后窗口自动关闭!");
+				//3秒后关闭模态 todo
+				setTimeout("$('#myModal').modal('hide')",2000);
+				//关闭后刷新页面
+				//window.location.reload();
+				
+			});
+			
+		});
+		
+	}
+
+	//删除绑定事件
+	$(".deleteBtn01").bind('click',function(){
+		var url01 = "{:u('Teacher/Course/delete')}";
+		commonEvent($(this),'删除',url01);
+	});
+
+	//禁用和启用事件
+	$(".refuseBtn01").bind('click',function(){
+		//获得当前的状态
+		var status = $(this).parent().parent().children()[4].innerHTML;
+		if (status == '正常') {
+		var url02 = "{:u('Teacher/Course/refuse')}";
+		commonEvent($(this),'禁用',url02);
+
+
+
+		} else{
+			var url02 = "{:u('Teacher/Course/start')}";
+		commonEvent($(this),'启用',url02);
+			
+		};
+	});
+	
+
+
+	</script>
+</block>
+

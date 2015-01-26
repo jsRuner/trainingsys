@@ -1,0 +1,155 @@
+<extend name="Base:common"/>
+
+<block name="style">
+
+  <link rel="stylesheet" type="text/css" href="__CSS__/student.css"></block>
+
+<block name="header">
+
+  <div class="row my-ban">
+    <div class="col-md-8 col-md-offset-1">
+     
+      <div >
+
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}" /> 
+</span> 
+        <h1>
+          {:get_nickname()}
+          <small>{:get_time_in_day()}！</small>
+        </h1>
+      </div>
+
+      <p>人类被赋予了一种工作，那就是精神的成长。</p>
+
+    </div>
+
+  </div>
+
+</block>
+
+<block name="body">
+
+  <div class="row wwf-body-row">
+
+    <div class="col-md-3 col-md-offset-1">
+
+      <div class="panel panel-default">
+     
+
+        <div class="panel-heading">
+          <h3 class="panel-title">设置</h3>
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a href="{:u('Setting/setInfo')}">资料设置</a>
+            </li>
+            <li class="list-group-item">
+              <a href="{:u('Setting/setPhoto')}">修改头像</a>
+            </li>
+             <li class="list-group-item">
+              <a href="{:u('User/updateNickName')}">修改昵称</a>
+            </li>
+            <li class="list-group-item">
+              <a href="{:u('User/updatePassword')}">修改密码</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col-md-7">
+
+      <div class="panel panel-default panel-col lesson-manage-panel">
+        <div class="panel-heading">头像设置</div>
+        <div class="panel-body">
+
+           <empty name="memberData['photo']">
+            <p>你尚未设置个人头像</p>
+
+             <a href="{:u('Student/Setting/setPhoto',array('id'=>$memberData['id'],'step'=>2))}" class="btn btn-success">去添加</a>
+
+
+            <else />
+            <img src="{$memberData['photo']}">
+         <p>原图</p>
+         
+
+         <img src="{$memberData['large_photo']}">
+         <p>162*162</p>
+        
+         <img src="{$memberData['middle_photo']}">
+         <p>48*48</p>
+         <img src="{$memberData['small_photo']}">
+         <p>20*20</p>
+     
+
+         <a href="{:u('Student/Setting/setPhoto',array('id'=>$memberData['id'],'step'=>2))}" class="btn btn-success">编辑</a>
+          </empty>
+
+
+    </div>
+  </div>
+
+</div>
+
+</div>
+
+</block>
+
+<block name="script">
+
+<script type="text/javascript">
+//点击后初始化
+
+
+  function initCity(data) {
+  //alert(data);
+  var m ="{:u('user/getCity')}";
+  $.post(m,{ProvinceID:data},function(msg){
+  //alert(msg);
+  document.getElementById("profile_city").options.length = 0;
+  var p;
+  for (var i = msg.length - 1; i >= 0; i--) {
+  p = new Option( msg[i].CityName,msg[i].CityID);
+  document.getElementById("profile_city").options[i] = p;
+  };
+  });
+  }
+
+  function initDepartment(data) {
+  // alert(data);
+  var m ="{:u('user/getDepartment')}";
+  $.post(m,{schoolid:data},function(msg){
+  //alert(msg);
+  document.getElementById("profile_department").options.length = 0;
+  var p;
+  for (var i = msg.length - 1; i >= 0; i--) {
+  p = new Option( msg[i].name,msg[i].id);
+  document.getElementById("profile_department").options[i] = p;
+  };
+  });
+  }
+
+   function initProfession(data) {
+  //alert(data);
+  var m ="{:u('user/getProfession')}";
+  $.post(m,{departmentid:data},function(msg){
+  //alert(msg);
+  document.getElementById("profile_profession").options.length = 0;
+  var p;
+  for (var i = msg.length - 1; i >= 0; i--) {
+  p = new Option( msg[i].name,msg[i].id);
+  document.getElementById("profile_profession").options[i] = p;
+  };
+  });
+  }
+
+   
+
+        </script>
+
+</block>

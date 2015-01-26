@@ -1,0 +1,174 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style">
+
+  <link rel="stylesheet" type="text/css" href="__CSS__/student.css"></block>
+
+
+<block name="header">
+
+  <div class="row my-ban">
+    <div class="col-md-8 col-md-offset-1">
+      <!-- <img src="#">
+      -->
+      <div >
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}" /> 
+</span> 
+        <h1>
+          {:get_nickname()}
+          <small>{:get_time_in_day()}！</small>
+        </h1>
+      </div>
+
+      <p>人类被赋予了一种工作，那就是精神的成长。</p>
+
+    </div>
+
+  </div>
+
+</block>
+<block name="body">
+
+ <div class="row">
+   
+   <!-- 左侧列表区域 -->
+
+   <div class="col-md-8 col-md-offset-1">
+
+    <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+
+        <a class="btn btn-success btn-sm" href="{:u('Student/Daily/index')}">返回列表</a>
+      </div>
+
+  <div class="panel-body">
+      <h3>{$dailyData['title']}</h3>
+
+      <p style="margin-top: 20px;">
+
+          {$dailyData['content']}
+      </p>
+    
+  </div>
+
+</div>
+
+
+
+     
+   </div>
+
+   <div class="col-md-2">
+
+
+    <div class="panel panel-default">
+  <div class="panel-heading">什么是学习日记?</div>
+  <div class="panel-body">
+    每天的学习计划与工作内容。
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">相关统计</h3>
+  </div>
+  <div class="panel-body">
+
+  </div>
+</div>
+     
+   </div>
+
+
+   <!-- 右侧介绍区域 -->
+ </div>
+
+ <!-- 模态 -->
+  <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">操作确认：</h4>
+      </div>
+      <div class="modal-body">
+        <p>你确定删除课程？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="okBtn">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.mo
+  <!-- 模态结束 -->
+
+</block>
+
+<block name="script">
+ <script type="text/javascript">
+
+/*
+点击管理则出现可以删除的按钮
+ */
+$("#managerBtn01").bind('click',function(){
+  //显示删除按钮
+    $(".deleBtn").toggle();
+  });
+
+
+
+
+//模态窗口关闭后刷新页面
+  $('#myModal').on('hidden.bs.modal', function (e) {
+    window.location.reload();
+})
+
+  //通用的事件
+  function commonEvent(obj,info,url) {
+    // body...
+    //获得要删除的信息.这里获取标题
+    var msg = obj.attr('dt');
+    var nid = obj.attr('va');
+   // alert(id);
+    
+    //初始化模态中的信息
+    $(".modal-title").html(info+"操作确定：");
+    $(".modal-body p").html("你确定"+info+msg+"课程笔记?");
+    $('#myModal').modal('show');
+    //给确定按钮绑定删除的事件
+    $("#okBtn").bind('click',function(){
+      
+      $(".modal-body p").html("正在执行"+info+"操作。。。");
+      $.post(url,{nid:nid},function(result){
+        //删除的反馈
+        $(".modal-body p").html("操作结果:<strong style='color:red;'>"+result.msg+"</strong>,2秒后窗口自动关闭!");
+        //3秒后关闭模态 todo
+        setTimeout("$('#myModal').modal('hide')",2000);
+        //关闭后刷新页面
+        //window.location.reload();
+        
+      });
+      
+    });
+    
+  }
+
+
+  //删除绑定事件
+  $(".deleHref").bind('click',function(){
+    var url01 = "{:u('Student/Note/deleteNote')}";
+    commonEvent($(this),'删除',url01);
+  });
+
+
+
+ </script>
+
+
+
+
+
+</block>

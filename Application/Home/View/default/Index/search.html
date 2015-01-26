@@ -1,0 +1,87 @@
+<extend name="Base:common"/>
+
+<block name="side">
+	
+</block>
+
+<block name="body">
+	<div class="es-row-wrap container-gap">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="page-header"><h1>搜索</h1></div>
+    </div>
+  </div>
+
+  <div class="row row-3-9">
+    <div class="col-md-9" style="min-height:300px;">
+
+      <form class="well well-sm" method="POST" action="{:u('Index/search')}">
+        <div class="input-group input-group-lg">
+          <input type="text" class="form-control" name="title" value="">
+          <span class="input-group-btn">
+            <button class="btn btn-primary" type="submit">搜索</button>
+          </span>
+        </div>
+      </form>
+
+              <div class="empty">
+
+                <ul class="course-wide-list">
+                 <volist name="courseInfo" id="vo">
+                    <li class="course-item clearfix">
+                      <a class="course-picture-link" href="{:U('index/selectCourse',array('id'=>$vo['id']))}">
+                         <empty name="vo['smallPicture']">
+          <img class="picture" style="width:230px; height:129px" src="__PUBLIC__/Teacher/images/coursePicture.png">
+
+            <else />
+
+             <img class="picture" style="width:230px; height:129px" src="{$vo['smallPicture']}"/>
+
+
+
+          </empty>
+</a>
+                      <div class="course-body">
+                        <h4 class="course-title">
+                          <a href="{:U('index/selectCourse',array('id'=>$vo['id']))}"  >{$vo.title}</a>
+
+                        </h4>
+
+                        <div class="course-about ellipsis"></div>
+
+                        <div class="course-footer clearfix">
+                          <div class="teacher">
+                            <a href="/web/user/1">
+                              <!-- <img src="#" class="teacher-avatar"> --></a>
+                            <a class="teacher-nickname ellipsis" href="#">{$vo.author}</a>
+                            <span class="teacher-title ellipsis">教师</span>
+                          </div>
+                          <div class="course-metas">
+                            <span class="stars-0">&nbsp;</span>
+                            <span class="divider"></span>
+                            <span class="text-muted mrm mls"> <strong>0</strong>
+                              学员
+                            </span>
+                            <span class="course-price">{$vo.price}元</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    </volist>
+              </ul>
+                
+
+              </div>
+          </div>
+    <div class="col-md-3">
+
+    </div>
+
+    
+
+
+  </div>
+
+</div>
+	
+</block>

@@ -1,0 +1,422 @@
+[ 2015-01-21T09:35:15+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000153s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001495s ]
+
+[ 2015-01-21T09:35:16+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023485s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000858s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2015-01-21T09:36:17+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000191s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000336s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024198s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001405s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001551s ]
+
+[ 2015-01-21T09:36:18+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000184s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000252s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2015-01-21T09:36:23+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019334s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2015-01-21T09:39:58+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000746s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000827s ]
+
+[ 2015-01-21T09:39:59+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020529s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2015-01-21T09:40:08+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017287s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2015-01-21T10:45:15+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 25 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='25' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001533s ]
+
+[ 2015-01-21T10:50:51+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 25 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='25' [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000288s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032070s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001784s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2015-01-21T15:41:00+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000988s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2015-01-21T15:45:59+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031458s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001828s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002008s ]
+
+[ 2015-01-21T15:50:59+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000225s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001229s ]
+
+[ 2015-01-21T15:51:04+08:00 ] ::1 /index.php?s=/student/Daily/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_daily` [ RunTime:0.0042s ]
+SQL: SELECT COUNT(id) AS tp_Count FROM `wg_daily` WHERE `status` = 1 AND `uid` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`content`,`create_time`,`update_time`,`status`,`uid` FROM `wg_daily` WHERE `status` = 1 AND `uid` = 1 ORDER BY create_time DESC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033129s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000974s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001145s ]
+
+[ 2015-01-21T15:51:07+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000168s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-01-21T15:51:08+08:00 ] ::1 /index.php?s=/Student/Note/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018988s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000896s ]
+
+[ 2015-01-21T15:51:10+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023087s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023193s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000220s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000814s ]
+
+[ 2015-01-21T15:52:18+08:00 ] ::1 /index.php?s=/Student/Note/listNote/cid/41/lesson_id/93.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wg_course` WHERE `id` = 41 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0024s ]
+SQL: SELECT `nickname`,`middle_photo` FROM `wg_member` WHERE ( 1=1 AND uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_category` [ RunTime:0.0021s ]
+SQL: SELECT `title` FROM `wg_course_category` WHERE ( 1=1 AND id='2' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0017s ]
+SQL: SELECT count(id) FROM `wg_course_note` WHERE ( 1=1 AND cid='41' )  [ RunTime:0.0004s ]
+SQL: SELECT COUNT(id) AS tp_Count FROM `wg_course_note` WHERE `status` = 1 AND `cid` = 41 AND `uid` = 1 AND `lesson_id` = 93 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`uid`,`cid`,`lesson_id`,`content`,`status`,`create_time`,`update_time`,`seq` FROM `wg_course_note` WHERE `status` = 1 AND `uid` = 1 AND `cid` = 41 AND `lesson_id` = 93 ORDER BY seq DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course_lesson` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title` FROM `wg_course_lesson` WHERE `id` = 93 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Template.class.php 第 531 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000217s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000186s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000928s ]
+
+[ 2015-01-21T15:52:20+08:00 ] ::1 /index.php?s=/Student/Note/editorNote/id/220.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_course_note` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wg_course_note` WHERE `id` = 220 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017300s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017397s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000792s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000894s ]
+
+[ 2015-01-21T15:52:28+08:00 ] ::1 /index.php?s=/Student/MyClass/index.html
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: mapping_order /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='1' [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001414s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001559s ]
+

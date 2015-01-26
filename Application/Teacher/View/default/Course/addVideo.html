@@ -1,0 +1,280 @@
+<extend name="Base:common" />
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/Validform_v5.3.2/validform_style.css"></block>
+<block name="body">
+	<div class="container-fluid">
+		<div class="row">
+			<!--主体部分 左右分栏-->
+			<div class="col-md-3 sideBar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/index')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							返回列表
+						</a>
+					</li>
+
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/editor',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							基本信息
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/setPicture',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课程图片
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/videos',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							视频列表
+						</a>
+					</li>
+
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/lessons',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课时列表
+						</a>
+					</li>
+					<li class="list-group-item">预留菜单</li>
+					<li class="list-group-item">预留菜单</li>
+				</ul>
+			</div>
+			<!-- 右侧 -->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span>发布新课程</span>
+					</div>
+					<div class="panel-body">
+						<div class="alert alert-warning alert-dismissible" role="alert" id="errorMsg" style="display:none" >
+							<button type="button" class="close" data-dismiss="alert">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button> <strong>注意!</strong> <b></b>
+						</div>
+						<!-- 表单开始 -->
+						<form role="form" id="myform" action="{:u('Teacher/Course/addVideo')}" method="post">
+							<div class="form-group">
+								<label for="video-title">标题</label>
+								<input type="text" class="form-control" id="course-title" name="title" placeholder="输入视频标题" datatype="s5-16" errormsg="标题至少5个字符,最多16个字符!" nullmsg="你没有输入标题！" >
+								<p class="help-block">视频的标题可以设置5到16个字符.</p>
+							</div>
+							<div class="form-group">
+								<label for="video-about">介绍</label>
+								<textarea name="about" class="form-control" id="course-about" cols="30" rows="10" placeholder="输入视频描叙"></textarea>
+								<p class="help-block">视频的描叙最多1000个汉字.</p>
+							</div>
+
+							<div class="form-group">
+								<label for="video-file">视频文件</label>
+								<input id="videofile"  class="form-control" name="videofile" type="text" id="video-file" />
+                  <div style="position:relative; width:80px; height:25px;">
+                    <div id="swfDiv" style="width:80px;height:25px;position:absolute;z-index:2;"></div>
+                    <input type="button" value="选择" id="btn_width" style="width:80px;height:25px;position:absolute;z-index:1;" />
+                  </div>
+								<p class="help-block">需要上传的视频文件，格式不限.</p>
+							</div>
+							
+							
+						<button type="submit" class="btn btn-default">提交</button>
+					</form>
+					<!-- 表单结束 -->
+				</div>
+				<div class="panel-footer text-center">
+					提示：课程未发布用户无法学习，恢复为已发布状态即可。 <b style="color:red">课程被删除后将再无法还原</b>
+					。
+				</div>
+			</div>
+		</div>
+		<!-- 右侧结束 -->
+	</div>
+</div>
+</block>
+<block name="script">
+<script type="text/javascript" src="__STATIC__/Validform_v5.3.2/validform_v5.3.2.js" ></script>
+<script type="text/javascript">
+	/*验证表单*/
+		var demo   = $("#myform").Validform(
+		{
+		tiptype:function(msg,o,cssctl){
+		var objtip =$("#errorMsg");
+		objtip.children('b').html(msg);
+		objtip.show();
+		}
+		}
+		);
+
+
+			
+	</script>
+
+
+ <script type="text/javascript" src="__STATIC__/cc/js/swfobject.js"></script>
+  <script type="text/javascript">
+
+  var videofile;
+var title;
+var tag;
+var description;
+
+var hashId;
+var courseId = "{$id}";
+
+// 加载上传flash ------------- start
+var swfobj=new SWFObject('http://union.bokecc.com/flash/api/uploader.swf', 'uploadswf', '80', '25', '8');
+swfobj.addVariable( "progress_interval" , 1); //  上传进度通知间隔时长（单位：s）
+swfobj.addVariable( "notify_url" , "{$spark_config['notify_url']}"); //  上传视频后回调接口
+swfobj.addParam('allowFullscreen','true');
+swfobj.addParam('allowScriptAccess','always');
+swfobj.addParam('wmode','transparent');
+swfobj.write('swfDiv');
+// 加载上传flash ------------- end
+//-------------------
+//调用者：flash
+//功能：选中上传文件，获取文件名函数
+//时间：2010-12-22
+//说明：用户可以加入相应逻辑
+//-------------------
+function on_spark_selected_file(filename) {
+  document.getElementById("videofile").value = filename;
+}
+//-------------------
+//调用者：flash
+//功能：验证上传是否正常进行函数
+//时间：2010-12-22
+//说明：用户可以加入相应逻辑
+//-------------------
+function on_spark_upload_validated(status, videoid) {
+  if (status == "OK") {
+    $("#up").html("提示：上传前检查通过");
+    hashId = videoid;
+    //alert("上传正常,videoid:" + videoid);
+   // document.getElementById("videoid").value = videoid;
+   // document.getElementById("videoidshow").innerHTML = videoid;
+  } else if (status == "NETWORK_ERROR") {
+    //alert("网络错误");
+    $("#up").html("提示：网络错误");
+  } else {
+   // alert("api错误码：" + status);
+   $("#up").html("api错误码：" + status);
+  }
+}
+//-------------------
+//调用者：flash
+//功能：通知上传进度函数
+//时间：2010-12-22
+//说明：用户可以加入相应逻辑
+//-------------------
+function on_spark_upload_progress(progress) {
+  var uploadProgress = document.getElementById("up");
+  if (progress == -1) {
+    uploadProgress.innerHTML = "上传出错：" + progress+"，请刷新后再次上传";
+  } else if (progress == 100) {
+    uploadProgress.innerHTML = "进度：100% 上传完成";
+
+    //alert(title);
+    //alert(hashId);
+    title = decodeURIComponent(title,"utf-8");
+    //后台存入数据库
+    $.post("{:u('addFileForm')}",{title:title,hashId:hashId,courseId:courseId},function(msg){
+      //alert(msg);
+    //弹出选择框，提示是否要进行跳转
+    if(confirm('上传成功,选择确定则跳转到视频列表，选择取消则继续上传视频?'))
+{
+   window.location.href = "{:u('files',array('id'=>$id))}";
+}
+else
+{
+   window.location.reload();
+}
+    });
+
+    
+    
+  } else {
+    uploadProgress.innerHTML = "进度：" + progress + "%,请勿进行其他操作";
+  }
+}
+function positionUploadSWF() {
+  document.getElementById("swfDiv").style.width = document
+      .getElementById("btn_width").style.width;
+  document.getElementById("swfDiv").style.height = document
+      .getElementById("btn_width").style.height;
+}
+
+
+function submitvideo() {
+
+
+
+
+   videofile = document.getElementById("videofile").value;
+   title = encodeURIComponent(document.getElementById("title").value, "utf-8");
+   tag = encodeURIComponent(document.getElementById("tag").value, "utf-8");
+   description = encodeURIComponent(document.getElementById("description").value, "utf-8");
+
+   if(videofile==''){
+     document.getElementById("up").innerHTML = "提示：你没有选择任何文件";
+     document.getElementById("up").style.display="block";
+     return;
+   }
+
+  var baseUrl = "{:u('getuploadurl')}";
+  var url = baseUrl+"?title=" + title + "&tag=" + tag
+      + "&description=" + description;
+  var req = getAjax();
+  req.open("GET", url, true);
+  req.onreadystatechange = function() {
+    if (req.readyState == 4) {
+      if (req.status == 200) {
+        var re = req.responseText;//获取返回的内容
+        //alert(re);
+        //return;
+        re = re.substr(1,re.length-2);
+        //alert(re);
+
+
+        document.getElementById("uploadswf").start_upload(re); // 调用flash上传函数
+        //$("#up").show().html("提示：正在执行上传操作");
+        document.getElementById("up").innerHTML = "提示：正在执行上传操作";
+        document.getElementById("up").style.display="block";
+
+        //让按钮失效，阻止再次提交
+        $('#subbtn').attr('disabled',true);
+      }
+    }
+  };
+  req.send(null);
+}
+function getAjax() {
+  var oHttpReq = null;
+  if (window.XMLHttpRequest) {
+    oHttpReq = new XMLHttpRequest;
+    if (oHttpReq.overrideMimeType) {
+      oHttpReq.overrideMimeType("text/xml");
+    }
+  } else if (window.ActiveXObject) {
+    try {
+      oHttpReq = new ActiveXObject("Msxml2.XMLHTTP");
+    } catch (e) {
+      oHttpReq = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+  } else if (window.createRequest) {
+    oHttpReq = window.createRequest();
+  } else {
+    oHttpReq = new XMLHttpRequest();
+  }
+  return oHttpReq;
+}
+</script>
+</block>

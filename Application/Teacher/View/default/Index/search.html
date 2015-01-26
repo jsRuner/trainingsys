@@ -1,0 +1,76 @@
+<extend name="Base:common" />
+
+
+
+
+
+
+<block name="body">
+	
+	<div class="panel panel-default">
+  <div class="panel-body">
+    <input type="text" name="id">
+    <button type="button" onclick="fetchData()" >点击查询</button>
+    <button type="button" onclick="zl_xm('2014301658245','wgmost','SQINDEX')">点击</button>
+  </div>
+</div>
+
+
+</block>
+<block name="script">
+
+<script type="text/javascript">
+
+
+
+
+
+	var showtype=1;
+	var strword='申请号,本国优先权,分案原申请号+="2014301658245%" or 摘要="2014301658245"';
+	var numSortMethod =4;
+	var numFMGB=0;
+	var numFMSQ=0;
+	var numSYXX=0;
+	var numWGSQ=0;
+	var pageSize=0;
+	var pageNow=1;
+
+	var strLicenseCode='';
+	var selected ='';
+
+	function fetchData(){
+		
+
+	//异步获取数据
+	$.post('http://epub.sipo.gov.cn/patentoutline.action', {id:11}, function(msg) {
+		/*optional stuff to do after success */
+		alert(msg);
+	});
+
+
+
+	}
+
+	function zl_xm(an, db, index) {
+			var strSources = db;
+	var strWhere = "申请号='" + an + "' and " + index + "=1";
+	var strLicenseCode = "";
+	var pageSize = "6";
+	var pageNow = "1";
+
+	//异步获取数据
+	$.post('http://epub.sipo.gov.cn/patentdetail.action', {strWhere:strWhere,strLicenseCode:strLicenseCode,pageSize:pageSize,pageNow:pageNow}, function(msg) {
+		/*optional stuff to do after success */
+		alert(msg);
+	});
+
+	}
+
+
+	
+
+	
+	
+</script>
+
+</block>

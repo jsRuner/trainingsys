@@ -1,0 +1,134 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style"></block>
+<block name="header">
+  <div class="row wwf-row-ban">
+    
+    <div class="col-md-8 col-md-offset-2">
+      
+      
+        <img src="__IMG__/ban2.jpg">
+      
+    </div>
+
+
+  </div>
+</block>
+<block name="body">
+<div class="row wwf-courselist">
+  <div class="col-md-8 col-md-offset-2 col-sm-12">
+
+  
+
+    
+
+     <div class="row wwf-itemrow">
+
+
+
+      <volist name="courseList" id="vo" mod="4">
+
+        <div class="col-md-3">
+        <a href="{:U('Home/Course/detail',array('id'=>$vo['id']))}" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv">
+              <img src="{$vo['large_picture']}" alt="{$vo['title']}" style="height:167px" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$vo['title']}</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 {$vo['student_num']} 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <eq name="mod" value="3">
+
+      </div>
+      <div class="row wwf-itemrow">
+        
+
+
+      </eq>
+        
+
+
+      </volist>
+      <!-- <div class="col-md-3">
+        <a href="{:U('index/selectCourse',array('id'=>$vo['id']))}" class="wwf-courseitem">
+          <div class="media">
+            <div class="imgdiv">
+              <img src="{$courseInfo[0]['smallPicture']}" alt="{$courseInfo[0]['title']}" class="img-rounded">
+            </div>
+            
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$courseInfo[0]['title']}</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 {$courseInfo[0]['studentNum']} 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="{:U('index/selectCourse',array('id'=>$vo['id']))}" class="wwf-courseitem">
+          <div class="media">
+            
+              <div class="imgdiv">
+              <img src="{$courseInfo[1]['smallPicture']}" alt="{$courseInfo[0]['title']}" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$courseInfo[1]['title']}</h4>
+              <p class="text-center"> <i class="fa fa-bar-chart"></i>
+                已有 {$courseInfo[1]['studentNum']} 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="{:U('index/selectCourse',array('id'=>$vo['id']))}" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="{$courseInfo[2]['smallPicture']}" alt="{$courseInfo[2]['title']}" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$courseInfo[2]['title']}</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有{$courseInfo[0]['studentNum']}人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-3">
+        <a href="{:U('index/selectCourse',array('id'=>$vo['id']))}" class="wwf-wwf-courseitem">
+          <div class="media">
+           
+             <div class="imgdiv">
+              <img src="{$courseInfo[3]['smallPicture']}" alt="{$courseInfo[0]['title']}" class="img-rounded">
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading text-center">{$courseInfo[3]['title']}</h4>
+              <p class="text-center">
+                <i class="fa fa-bar-chart"></i>
+                已有 {$courseInfo[3]['studentNum']} 人进行学习
+              </p>
+            </div>
+          </div>
+        </a>
+      </div> -->
+    </div>
+
+ 
+    
+    
+  </div>
+</div>
+
+</block>

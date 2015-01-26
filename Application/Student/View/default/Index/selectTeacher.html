@@ -1,0 +1,178 @@
+<extend name="Base:common"/>
+
+<block name="side"></block>
+
+<block name="body">
+
+  <div class="row wwf-selectCourseBan">
+
+    <div class="col-md-4 col-md-offset-2">
+
+      <div class="wwf-selectCourseImg" >
+        
+        <img src="{$teacherInfo.photo}" style="width:198px">
+      </div>
+
+
+    </div>
+
+     <div class="col-md-5 col-md-offset-1">
+
+      <div class="wwf-selectCourseContent">
+        <h2>{$teacherInfo.realname}</h2>
+
+        <div class="stats">
+          
+          <p >{$teacherInfo['rank']}</p>
+          <p ><notempty name="teacherInfo['weibo']">
+            <a  href="{$teacherInfo['weibo']}" title="新浪微博" >关注他的微博</a>
+
+          </notempty></p>
+
+          
+        
+          
+          
+        </div>
+
+      <!--   <if condition="$isAdd">
+           <button class="btn btn-success addCourseBtn" onclick="addToLearn({$teacherInfo['id']})">取消收藏</button>
+
+          <else/>
+        <button class="btn btn-success addCourseBtn" onclick="addToLearn({$teacherInfo['id']})">加入收藏</button>
+        </if> -->
+        
+
+      </div>
+
+      
+
+
+    </div>
+    
+    
+
+  </div>
+
+
+  <div class="row wwf-selectteacherInfo">
+
+    <div class="col-md-7 col-md-offset-1">
+
+      <div id="course-about-pane" class="panel panel-default ">
+          <div class="panel-heading">
+            <h3 class="panel-title">教师介绍</h3>
+          </div>
+          <div class="panel-body">
+            <!-- <span class="text-muted">{$teacherInfo.about}</span> -->
+           <!-- <textarea name="about" id="myEditor1" datatype="*3-1000" errormsg="总结最少3-1000个文字" disabled="disabled">
+           -->
+       <!--  </textarea> -->
+         <p> {$teacherInfo.info}</p>
+
+          </div>
+        </div>
+
+        <div id="course-list-pane" class="panel panel-default ">
+          <div class="panel-heading">
+            <h3 class="panel-title">发布的课程</h3>
+          </div>
+          <div class="panel-body">
+            <div class="course-item-list-multi">
+
+
+                       <ul class="list-group">
+
+                        <volist name="teacherInfo['courseInfo']" id="vo">
+
+                          
+
+  <li class="list-group-item"><a href="{:u('Index/selectCourse',array('id'=>
+                  $vo['id'],'courseId'=>$vo['courseId']))}">课程{$key+1} :&nbsp;&nbsp;&nbsp;&nbsp;{$vo['title']} </a></li>
+                        </volist>
+ 
+</ul>
+              
+            </div>
+          </div>
+        </div>
+      
+      
+    </div>
+
+    <div class="col-md-3">
+      
+      <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">联系方式</h3>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+  <li class="list-group-item"><span>QQ:&nbsp;&nbsp;<empty name="teacherInfo['qq']">无<else/>{$teacherInfo['qq']}</empty></span></li>
+  <li class="list-group-item"><span>邮箱:&nbsp;&nbsp;<empty name="teacherInfo['email']">无<else/>{$teacherInfo['email']}</empty></span></li>
+
+</ul>
+
+
+          </div>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+ 
+
+</block>
+
+<block name="script">
+
+  <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/ueditor.all.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+ 
+  
+  <script type="text/javascript">
+
+  var url = "{:u('Home/index/addLearn')}";
+
+  function addToLearn (id) {
+    // body...
+    //alert(111);
+    $.post(url,{id:id},function(msg){
+      alert(msg.info);
+      window.location.reload();
+    });
+    
+  }
+
+
+//   window.UEDITOR_HOME_URL = "";
+
+
+//       window.UEDITOR_CONFIG.initialFrameWidth = 632;
+//       window.UEDITOR_CONFIG.initialFrameHeight = 332;
+//       UE.getEditor('myEditor1', {
+//     toolbars: [
+        
+//     ],
+//     autoHeightEnabled: true,
+//     autoFloatEnabled: true,
+//     elementPathEnabled:false,
+//     readonly:true,
+//     wordCount:false 
+// });
+
+
+  
+
+
+
+  </script>
+</block>

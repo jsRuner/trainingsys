@@ -1,0 +1,40 @@
+<?php
+// +----------------------------------------------------------------------
+// | ThinkPHP [ WE CAN DO IT JUST THINK IT ]
+// +----------------------------------------------------------------------
+// | Copyright (c) 2006-2013 http://thinkphp.cn All rights reserved.
+// +----------------------------------------------------------------------
+// | Author: 麦当苗儿 <zuojiazi.cn@gmail.com> <http://www.zjzit.cn>
+// +----------------------------------------------------------------------
+namespace OT\TagLib;
+use Think\Template\TagLib;
+/**
+ * 分类模型标签库：提供一个获取分类的列表
+ * 2014年12月11日 15:04:43未完成
+ */
+class Category extends TagLib{
+    /**
+     * 定义标签列表
+     * @var array
+     */
+    protected $tags   =  array(
+        'list'     => array('attr' => 'name,field', 'close' => 1), //获取指定分类的列表，未指定则获取所有分类
+    );
+
+    public function _list($tag, $content){
+        $name   = $tag['name'];
+        $field  = empty($tag['field']) ? 'true' : $tag['field'];
+
+        $parse  = '<?php ';
+        $parse .= '$__CATE__ = D(\'Category\')->lists();';
+        $parse .= ' ?>';
+
+        $parse .= '<volist name="__CATE__" id="'. $name .'">';
+        $parse .= $content;
+        $parse .= '</volist>';
+
+        return $parse;
+    }
+
+    
+}

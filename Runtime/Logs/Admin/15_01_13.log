@@ -1,0 +1,1695 @@
+[ 2015-01-13T09:13:31+08:00 ] ::1 /index.php/admin
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0020s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0016s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_document` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.026386s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.024949s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000097s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.142763s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006252s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.111402s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.117593s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.117700s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.150624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004264s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.119966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.124168s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.006526s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.149321s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004696s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.119966s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.124565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001448s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001675s ]
+
+[ 2015-01-13T09:13:34+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024755s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000789s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000891s ]
+
+[ 2015-01-13T09:16:21+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000195s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028420s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000801s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000932s ]
+
+[ 2015-01-13T09:18:41+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/forbidUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: UPDATE `wg_member` SET `status`='0' WHERE `uid` IN ('24') [ RunTime:0.0012s ]
+
+[ 2015-01-13T09:18:43+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000241s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000391s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000271s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000831s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2015-01-13T09:18:46+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0024s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0005s ]
+
+[ 2015-01-13T09:18:48+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000188s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001088s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001205s ]
+
+[ 2015-01-13T09:31:11+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0014s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2015-01-13T09:31:24+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:31:26+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0091s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000183s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025660s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025767s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-01-13T09:31:27+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+
+[ 2015-01-13T09:31:31+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000799s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:31:32+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000346s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000231s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001952s ]
+
+[ 2015-01-13T09:31:34+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000827s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0102s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:31:36+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000208s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024569s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000949s ]
+
+[ 2015-01-13T09:31:39+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000833s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0102s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:31:41+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000367s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001241s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001363s ]
+
+[ 2015-01-13T09:31:43+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/forbidUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001340s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0094s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: UPDATE `wg_member` SET `status`='0' WHERE `uid` IN ('24') [ RunTime:0.0003s ]
+
+[ 2015-01-13T09:31:45+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000217s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000339s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032923s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000857s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2015-01-13T09:31:46+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/resumeUser.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: UPDATE `wg_member` SET `status`='1' WHERE `uid` IN ('24') [ RunTime:0.0003s ]
+
+[ 2015-01-13T09:31:48+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0095s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028760s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028842s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000887s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2015-01-13T09:32:34+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000246s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027429s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000812s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000904s ]
+
+[ 2015-01-13T09:32:36+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='1' WHERE `uid` IN ('24') [ RunTime:0.0005s ]
+
+[ 2015-01-13T09:32:38+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000868s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2015-01-13T09:32:40+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/student.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='0' WHERE `uid` IN ('24') [ RunTime:0.0003s ]
+
+[ 2015-01-13T09:32:42+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000756s ]
+
+[ 2015-01-13T09:33:40+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030881s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000799s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000927s ]
+
+[ 2015-01-13T09:34:17+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+NOTIC: [8] Undefined index: isTeacher /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: isTeacher /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022937s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000808s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2015-01-13T09:36:14+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:36:23+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0028s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:36:25+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Undefined index: isTeacher /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+NOTIC: [8] Undefined index: isTeacher /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/65e605872ed5d34210f5b33beb13f5a3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032047s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001078s ]
+
+[ 2015-01-13T09:38:00+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:40:37+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000191s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030900s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000890s ]
+
+[ 2015-01-13T09:40:54+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000205s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025867s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000901s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001020s ]
+
+[ 2015-01-13T09:41:04+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/student.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000958s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0023s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='0' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:41:06+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0097s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000184s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023227s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023301s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000800s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000886s ]
+
+[ 2015-01-13T09:41:11+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000885s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:41:12+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0095s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029362s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029462s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000986s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-01-13T09:49:00+08:00 ] ::1 /index.php?s=/Admin/User/changeStatus/method/teacher.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/changeStatus%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 19 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0016s ]
+SQL: UPDATE `wg_member` SET `isTeacher`='1' WHERE `uid` IN ('24') [ RunTime:0.0004s ]
+
+[ 2015-01-13T09:49:01+08:00 ] ::1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0013s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2015-01-13T09:49:30+08:00 ] ::1 /index.php?s=/Admin/User/add.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/add%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000980s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001084s ]
+
+[ 2015-01-13T10:59:22+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000102s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013553s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000604s ]
+
+[ 2015-01-13T10:59:29+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001282s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+
+[ 2015-01-13T10:59:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+NOTIC: [8] Undefined index: lite /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_action` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0015s ]
+SQL: INSERT INTO `wg_action_log` (`action_id`,`user_id`,`action_ip`,`model`,`record_id`,`create_time`,`remark`) VALUES ('1','1','2130706433','member','1','1421117981','admin在2015-01-13 10:59登录了后台') [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_action` WHERE `name` = 'user_login' LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined offset: 1 /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, null given /Applications/MAMP/htdocs/trainingsys/Application/Common/Common/function.php 第 725 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` WHERE `action_id` = 1 AND `user_id` = 1 AND `create_time` > 1421031581 LIMIT 1   [ RunTime:0.0017s ]
+SQL: UPDATE `wg_member` SET `login`=`login`+1,`last_login_time`='1421117981',`last_login_ip`='2130706433' WHERE `uid` = 1 [ RunTime:0.0004s ]
+
+[ 2015-01-13T10:59:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0018s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000206s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0014s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_model` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.024409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.023041s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.176036s ]
+SQL: select version() as v; [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013821s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.139370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.153138s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.153318s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.183570s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003027s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.155847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.158744s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.005429s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.181928s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003323s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.155847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.159030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2015-01-13T10:59:43+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/group.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wg_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030953s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000845s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000948s ]
+
+[ 2015-01-13T10:59:44+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0095s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000534s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001439s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001610s ]
+
+[ 2015-01-13T11:24:20+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0019s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0015s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.029772s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003374s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000608s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.026840s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.165073s ]
+SQL: select version() as v; [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013314s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.123357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.136090s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.136227s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.173687s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004318s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.139640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.143367s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.007151s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.170416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004744s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.139640s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.143765s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001839s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002016s ]
+
+[ 2015-01-13T11:24:21+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0002s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `extend_id` FROM wg_auth_group_access g INNER JOIN wg_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wg_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `wg_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0007s ]
+SQL: SELECT `extend` FROM `wg_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_attribute` [ RunTime:0.0021s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `wg_attribute` WHERE `model_id` = 1  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined variable: groups /Applications/MAMP/htdocs/trainingsys/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000982s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001102s ]
+
+[ 2015-01-13T11:24:22+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000567s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000950s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001062s ]
+
+[ 2015-01-13T11:24:23+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/group.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0027s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wg_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000283s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000821s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000945s ]
+
+[ 2015-01-13T11:24:24+08:00 ] 127.0.0.1 /index.php?s=/Admin/Addons/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Addons/index%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 43 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist` FROM `wg_addons` WHERE `name` IN ('Attachment','DevTeam','Editor','EditorForAdmin','SiteStat','SocialComment','SystemInfo')  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0022s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'Attachment' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SocialComment' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'Editor' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.045032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001725s ]
+
+[ 2015-01-13T11:24:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0096s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000215s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000316s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000942s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001063s ]
+
+[ 2015-01-13T11:24:25+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.0014s ]
+SQL: SELECT `extend_id` FROM wg_auth_group_access g INNER JOIN wg_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wg_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `wg_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `wg_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_attribute` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `wg_attribute` WHERE `model_id` = 1  [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: groups /Applications/MAMP/htdocs/trainingsys/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073875s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000205s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2015-01-13T11:24:26+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0095s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0007s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0015s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_document` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_category` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_model` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021713s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000250s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.020498s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.086874s ]
+SQL: select version() as v; [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005363s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.060833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.066006s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.066068s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.092824s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003224s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.067669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.070676s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.004629s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.091312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003521s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.067669s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.070955s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001103s ]
+
+[ 2015-01-13T11:42:37+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0012s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000731s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002198s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002388s ]
+
+[ 2015-01-13T11:42:38+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `extend_id` FROM wg_auth_group_access g INNER JOIN wg_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wg_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0008s ]
+SQL: SELECT `extend` FROM `wg_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_attribute` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `wg_attribute` WHERE `model_id` = 1  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined variable: groups /Applications/MAMP/htdocs/trainingsys/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000227s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000228s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001177s ]
+
+[ 2015-01-13T11:42:39+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/group.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0018s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wg_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000192s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027299s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027386s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000203s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000763s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000863s ]
+
+[ 2015-01-13T11:42:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Addons/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0012s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Addons/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 43  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 43 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '扩展' AND `pid` = 43 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`name`,`title`,`description`,`status`,`config`,`author`,`version`,`create_time`,`has_adminlist` FROM `wg_addons` WHERE `name` IN ('Attachment','DevTeam','Editor','EditorForAdmin','SiteStat','SocialComment','SystemInfo')  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0015s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'Attachment' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SocialComment' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'Editor' AND `status` = 1 LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'EditorForAdmin' AND `status` = 1 LIMIT 1   [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051502s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000909s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001023s ]
+
+[ 2015-01-13T11:42:40+08:00 ] 127.0.0.1 /index.php?s=/Admin/Config/group.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Config/group%' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 68  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 68 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '系统设置' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '数据备份' AND `pid` = 68 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_config` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`title`,`extra`,`value`,`remark`,`type` FROM `wg_config` WHERE `status` = 1 AND `group` = 1 ORDER BY sort  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001094s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001222s ]
+
+[ 2015-01-13T11:42:41+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000214s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000344s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037570s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000253s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001092s ]
+
+[ 2015-01-13T11:42:42+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.0016s ]
+SQL: SELECT `extend_id` FROM wg_auth_group_access g INNER JOIN wg_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0019s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wg_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wg_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0003s ]
+SQL: SELECT `extend` FROM `wg_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_attribute` [ RunTime:0.0016s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `wg_attribute` WHERE `model_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: groups /Applications/MAMP/htdocs/trainingsys/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000319s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070303s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2015-01-13T11:42:42+08:00 ] 127.0.0.1 /index.php?s=/Admin/Index/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Index/index%' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ AdminIndex ] --START--
+SQL: SHOW COLUMNS FROM `wg_addons` [ RunTime:0.0014s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SiteStat' AND `status` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_action_log` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_action_log` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_document` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_category` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_model` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.021739s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000212s ]
+INFO: Run Addons\SiteStat\SiteStatAddon [ RunTime:0.020471s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'SystemInfo' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.147217s ]
+SQL: select version() as v; [ RunTime:0.0004s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015414s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.111810s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.127198s ]
+INFO: Run Addons\SystemInfo\SystemInfoAddon [ RunTime:0.127316s ]
+SQL: SELECT `config` FROM `wg_addons` WHERE `name` = 'DevTeam' AND `status` = 1 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.154260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003255s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.132175s ]
+INFO: Run Addons\DevTeam\DevTeamAddon [ RunTime:0.004943s ]
+INFO: [ AdminIndex ] --END-- [ RunTime:0.152880s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003739s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.128982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.132559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001130s ]
+
+[ 2015-01-13T11:42:43+08:00 ] 127.0.0.1 /index.php?s=/Admin/Article/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0104s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%Article/index%' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 2  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 2 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '内容' AND `pid` = 2 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_auth_group_access` [ RunTime:0.0013s ]
+SQL: SELECT `extend_id` FROM wg_auth_group_access g INNER JOIN wg_auth_extend c on g.group_id=c.group_id  WHERE ( g.uid='1' and c.type='1' and !isnull(extend_id) )  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_category` [ RunTime:0.0017s ]
+SQL: SELECT `id`,`title`,`pid`,`allow_publish` FROM `wg_category` WHERE `status` = 1 ORDER BY pid,sort  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_model` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wg_model` WHERE `name` = 'document' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_document` [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `id`,`title`,`type`,`update_time`,`status`,`view`,`category_id`,`model_id`,`pid` FROM wg_document DOCUMENT WHERE `status` IN ('0','1','2') AND `pid` = 0 ORDER BY level DESC,DOCUMENT.id DESC LIMIT 0,10   [ RunTime:0.0004s ]
+SQL: SELECT `extend` FROM `wg_model` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_attribute` [ RunTime:0.0015s ]
+SQL: SELECT `id`,`name`,`type`,`extra` FROM `wg_attribute` WHERE `model_id` = 1  [ RunTime:0.0004s ]
+NOTIC: [8] Undefined variable: groups /Applications/MAMP/htdocs/trainingsys/Application/Admin/Controller/ArticleController.class.php 第 231 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000202s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+NOTIC: [8] Undefined index: _child /Applications/MAMP/htdocs/trainingsys/Runtime/Cache/Admin/7a4184ffe8f804b12b2e7f8851dd8f7d.php 第 77 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000904s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-01-13T11:42:44+08:00 ] 127.0.0.1 /index.php?s=/Admin/User/index.html
+SQL: SHOW COLUMNS FROM `wg_menu` [ RunTime:0.0099s ]
+SQL: SELECT `id`,`title`,`url` FROM `wg_menu` WHERE `pid` = 0 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0006s ]
+SQL: SELECT `pid` FROM `wg_menu` WHERE ( pid !=0 AND url like '%User/index%' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `wg_menu` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT DISTINCT  `group` FROM `wg_menu` WHERE `group` <> '' AND `pid` = 16  [ RunTime:0.0004s ]
+SQL: SELECT `id`,`url` FROM `wg_menu` WHERE `pid` = 16 AND `hide` = 0  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '用户管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT `id`,`pid`,`title`,`url`,`tip` FROM `wg_menu` WHERE `group` = '行为管理' AND `pid` = 16 AND `hide` = 0 ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `uid`,`nickname`,`sex`,`birthday`,`qq`,`score`,`login`,`reg_ip`,`reg_time`,`last_login_ip`,`last_login_time`,`status`,`photo`,`small_photo`,`middle_photo`,`large_photo`,`birth_province`,`birth_city`,`mobile`,`telephone`,`about`,`real_name`,`card`,`univs`,`department`,`profession`,`isTeacher` FROM `wg_member` WHERE `status` >= 0 AND `nickname` LIKE '%%' ORDER BY uid desc LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000351s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029426s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000193s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001024s ]
+

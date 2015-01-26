@@ -1,0 +1,21 @@
+    <!-- 底部
+    ================================================== -->
+   <footer>
+  <div class="container footer">
+      <p class="muted credit tr mr10">2005-2014 万工网络课堂 <a href="#">school.ahnieh.com</a> 版权所有皖ICP证070427号</p>
+      <ul>
+      <li><a href="#" target="_blank">关于我们</a>|</li>
+          <li><a href="#" target="_blank">在线反馈</a>|</li>
+          <li><a href="#" target="_blank">使用协议</a>|</li>
+          <li><a href="#" target="_blank">帮助中心</a></li>
+        </ul>
+  </div>
+</footer>
+
+<include file="Public/var"/>
+<block name="script"></block> <!-- 用于加载js代码 -->
+<!-- 页面footer钩子，一般用于加载插件JS文件和JS代码 -->
+{:hook('pageFooter', 'widget')}
+<div class="hidden"><!-- 用于加载统计代码等隐藏元素 -->
+  <block name="hidden"></block>
+</div>

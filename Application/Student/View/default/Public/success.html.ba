@@ -1,0 +1,77 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style">
+
+
+ 
+
+
+
+</block>
+
+<block name="side">
+
+  <block>
+
+
+
+<block name="body">
+
+    <div id="content-container" class="container">
+        <div class="row row-6">
+  <div class="col-md-6 col-md-offset-3">
+
+    <div class="panel panel-default panel-page">
+      <div class="panel-heading"><h2>万工网络平台提示</h2></div>
+
+      <div class="system-message">
+
+
+      
+
+
+<p class="jump lead">
+  恭喜你！<?php echo($message); ?>
+<b id="wait">
+  <?php echo($waitSecond); ?></b> 秒后页面将自动跳转
+</p>
+<div>
+    <a id="href" class="btn btn-info" id="btn-now" href="<?php echo($jumpUrl); ?>">立即跳转</a> 
+    <button id="btn-stop" class="btn btn-info" type="button" onclick="stop()">停止跳转</button> 
+</div>
+</div>
+      
+     
+
+      
+    </div>
+
+  </div>
+</div>
+    
+  </div>
+    
+</block>
+
+<block name="script">
+
+  <script type="text/javascript">
+
+  (function(){
+ var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+ var interval = setInterval(function(){
+      var time = --wait.innerHTML;
+      if(time <= 0) {
+        location.href = href;
+        clearInterval(interval);
+      };
+     }, 1000);
+  window.stop = function (){
+         console.log(111);
+            clearInterval(interval);
+ }
+ })();
+  </script>
+
+</block>

@@ -1,0 +1,548 @@
+[ 2014-12-23T13:59:02+08:00 ] 127.0.0.1 /student.php
+ERR: 无法加载控制器:Index
+
+[ 2014-12-23T13:59:17+08:00 ] 127.0.0.1 /student.php/Myclass
+ERR: 无法加载控制器:Myclass
+
+[ 2014-12-23T13:59:34+08:00 ] 127.0.0.1 /student.php?s=/Public/login.html
+ERR: 模板不存在:./Application/Student/View/default/Public/login.html
+
+[ 2014-12-23T14:00:58+08:00 ] 127.0.0.1 /student.php?s=/MyClass/index.html
+ERR: 非法操作:MyClass
+
+[ 2014-12-23T14:01:02+08:00 ] 127.0.0.1 /student.php?s=/Home/user/login.html
+ERR: 非法操作:Home
+
+[ 2014-12-23T14:01:22+08:00 ] 127.0.0.1 /student.php?s=/MyClass/index.html
+ERR: 非法操作:MyClass
+
+[ 2014-12-23T14:02:28+08:00 ] 127.0.0.1 /student.php?s=/Home/user/login.html
+ERR: 非法操作:Home
+
+[ 2014-12-23T14:02:30+08:00 ] 127.0.0.1 /student.php?s=/Home/Index/index.html
+ERR: 非法操作:Home
+
+[ 2014-12-23T14:02:33+08:00 ] 127.0.0.1 /student.php?s=/Home/Course/index.html
+ERR: 非法操作:Home
+
+[ 2014-12-23T14:02:36+08:00 ] 127.0.0.1 /student.php?s=/Home/Teacher/index.html
+ERR: 非法操作:Home
+
+[ 2014-12-23T14:09:06+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0036s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000319s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001063s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001141s ]
+
+[ 2014-12-23T14:09:10+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000251s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000342s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001136s ]
+
+[ 2014-12-23T14:09:26+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0068s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000235s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000317s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000580s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001104s ]
+
+[ 2014-12-23T14:14:33+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022103s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001193s ]
+
+[ 2014-12-23T14:15:33+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021662s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001211s ]
+
+[ 2014-12-23T14:17:41+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000325s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021695s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001158s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001282s ]
+
+[ 2014-12-23T14:17:43+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001135s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+
+[ 2014-12-23T14:18:11+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0027s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021517s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001097s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2014-12-23T14:18:18+08:00 ] 127.0.0.1 /index.php?s=/Student/setting/setInfo.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000475s ]
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 197 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 208 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 211 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 223 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 232 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 243 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 254 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 266 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 279 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 291 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 302 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 314 行.
+NOTIC: [8] Undefined variable: provinceInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 331 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: cityInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 352 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 368 行.
+NOTIC: [8] Undefined variable: schoolInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 374 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 390 行.
+NOTIC: [8] Undefined variable: currentdepartment D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 395 行.
+NOTIC: [8] Undefined variable: departmentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 397 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 413 行.
+NOTIC: [8] Undefined variable: professionInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067346s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067866s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001427s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001624s ]
+
+[ 2014-12-23T14:18:20+08:00 ] 127.0.0.1 /index.php?s=/Student/Setting/setPhoto.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`photo`,`small_photo`,`middle_photo`,`large_photo` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000200s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000279s ]
+NOTIC: [8] Undefined index: id D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\b841d67512c00fc186c7d3b49d4ff738.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003172s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003338s ]
+
+[ 2014-12-23T14:18:21+08:00 ] 127.0.0.1 /index.php?s=/Student/User/updateNickName.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000292s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040824s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000563s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001149s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001268s ]
+
+[ 2014-12-23T14:18:23+08:00 ] 127.0.0.1 /index.php?s=/Student/User/updatePassword.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003912s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004005s ]
+
+[ 2014-12-23T14:18:25+08:00 ] 127.0.0.1 /index.php?s=/Student/Setting/setPhoto.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`photo`,`small_photo`,`middle_photo`,`large_photo` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000201s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index: id D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\b841d67512c00fc186c7d3b49d4ff738.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018765s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000556s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001195s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001313s ]
+
+[ 2014-12-23T14:18:42+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0028s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000565s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001155s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001306s ]
+
+[ 2014-12-23T14:22:19+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000665s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001166s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001325s ]
+
+[ 2014-12-23T14:35:01+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000640s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001503s ]
+
+[ 2014-12-23T15:19:44+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000240s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001354s ]
+
+[ 2014-12-23T16:59:25+08:00 ] 127.0.0.1 /index.php?s=/Student/setting/setInfo.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000410s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 197 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 208 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 211 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 223 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 232 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 243 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 254 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 266 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 279 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 291 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 302 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 314 行.
+NOTIC: [8] Undefined variable: provinceInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 331 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: cityInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 352 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 368 行.
+NOTIC: [8] Undefined variable: schoolInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 374 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 390 行.
+NOTIC: [8] Undefined variable: currentdepartment D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 395 行.
+NOTIC: [8] Undefined variable: departmentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 397 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 413 行.
+NOTIC: [8] Undefined variable: professionInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000659s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001407s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001556s ]
+
+[ 2014-12-23T16:59:29+08:00 ] 127.0.0.1 /index.php?s=/Student/User/updateNickName.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000205s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000296s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027917s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000609s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001103s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2014-12-23T16:59:30+08:00 ] 127.0.0.1 /index.php?s=/Student/Setting/setPhoto.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT `uid`,`photo`,`small_photo`,`middle_photo`,`large_photo` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000213s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: id D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\b841d67512c00fc186c7d3b49d4ff738.php 第 197 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024386s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024459s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000610s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001190s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001335s ]
+
+[ 2014-12-23T16:59:34+08:00 ] 127.0.0.1 /index.php?s=/Student/setting/setInfo.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000397s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000479s ]
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 197 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 208 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 211 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 223 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 232 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 243 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 254 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 266 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 279 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 291 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 302 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 314 行.
+NOTIC: [8] Undefined variable: provinceInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 331 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: currentCity D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 350 行.
+NOTIC: [8] Undefined variable: cityInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 352 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 368 行.
+NOTIC: [8] Undefined variable: schoolInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 374 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 390 行.
+NOTIC: [8] Undefined variable: currentdepartment D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 395 行.
+NOTIC: [8] Undefined variable: departmentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 397 行.
+NOTIC: [8] Undefined variable: studentInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 413 行.
+NOTIC: [8] Undefined variable: professionInfo D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Runtime\Cache\Student\555e4d67099ef5f26cf62a7a7d77642c.php 第 417 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001292s ]
+
+[ 2014-12-23T16:59:36+08:00 ] 127.0.0.1 /index.php?s=/Student/User/updateNickName.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0027s ]
+SQL: SELECT `nickname` FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001763s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001856s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000654s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2014-12-23T16:59:42+08:00 ] 127.0.0.1 /index.php?s=/Student/User/submitNickname.html
+NOTIC: [8] Undefined index: lite D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `wg_member` WHERE `nickname` = 'wwf' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000169s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010595s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000592s ]
+
+[ 2014-12-23T16:59:50+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043256s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043331s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001101s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001224s ]
+
+[ 2014-12-23T16:59:53+08:00 ] 127.0.0.1 /index.php?s=/Student/MyClass/index.html
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `wg_member` WHERE `uid` = 2 LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: mapping_order D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 186 行.
+NOTIC: [8] Undefined index: mapping_limit D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Model\RelationModel.class.php 第 187 行.
+SQL: SELECT b.* FROM wg_member_course AS a, wg_course AS b WHERE a.cid = b.id AND a. uid='2' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000238s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023023s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001150s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001319s ]
+

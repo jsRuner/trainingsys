@@ -1,0 +1,11 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style"></block>
+
+
+
+    <block name="body">
+
+      
+    </block>

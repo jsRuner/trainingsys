@@ -1,0 +1,32 @@
+[ 2015-01-08T16:09:31+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040783s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000633s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000697s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2015-01-08T16:09:44+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001573s ]
+NOTIC: [8] Undefined index: lite D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+
+[ 2015-01-08T16:09:57+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+NOTIC: [8] Undefined index: lite D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+
+[ 2015-01-08T16:10:11+08:00 ] 127.0.0.1 /index.php?s=/Admin/Public/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001784s ]
+NOTIC: [8] Undefined index: lite D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\ThinkPHP\Library\Think\Db.class.php 第 37 行.
+

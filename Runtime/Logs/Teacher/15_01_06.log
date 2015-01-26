@@ -1,0 +1,47 @@
+[ 2015-01-06T13:44:36+08:00 ] 127.0.0.1 /index.php?s=/Teacher/Course/refuse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001680s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Application\Teacher\Controller\CourseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0044s ]
+SQL: UPDATE `wg_course` SET `status`='0' WHERE `id` = 41 [ RunTime:0.0395s ]
+
+[ 2015-01-06T13:44:42+08:00 ] 127.0.0.1 /index.php?s=/Teacher/Course/refuse.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Application\Teacher\Controller\CourseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0044s ]
+SQL: UPDATE `wg_course` SET `status`='0' WHERE `id` = 43 [ RunTime:0.0476s ]
+
+[ 2015-01-06T14:19:36+08:00 ] 127.0.0.1 /index.php?s=/Teacher/Course/start.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001688s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Application\Teacher\Controller\CourseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0053s ]
+SQL: UPDATE `wg_course` SET `status`='1' WHERE `id` = 41 [ RunTime:0.0388s ]
+
+[ 2015-01-06T14:19:41+08:00 ] 127.0.0.1 /index.php?s=/Teacher/Course/start.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) D:\Development\Server\apache2.2.22\htdocs\newtrainingsys\Application\Teacher\Controller\CourseController.class.php 第 15 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0044s ]
+SQL: UPDATE `wg_course` SET `status`='1' WHERE `id` = 43 [ RunTime:0.0648s ]
+
+[ 2015-01-06T14:26:35+08:00 ] 127.0.0.1 /index.php?s=/Teacher/User/updateNickName.html
+ERR: 无法加载控制器:User
+
+[ 2015-01-06T14:30:29+08:00 ] 127.0.0.1 /index.php?s=/Teacher/User/updateNickName.html
+ERR: 模板不存在:./Application/Teacher/View/default/User/updatenickname.html
+
+[ 2015-01-06T14:30:53+08:00 ] 127.0.0.1 /index.php?s=/Teacher/User/updateNickName.html
+ERR: 模板不存在:./Application/Teacher/View/default/User/updateNickName.html
+
+[ 2015-01-06T14:31:37+08:00 ] 127.0.0.1 /index.php?s=/Teacher/User/updateNickName.html
+ERR: 模板不存在:./Application/Teacher/View/default/User/updatenickname.html
+
+[ 2015-01-06T14:46:48+08:00 ] 127.0.0.1 /index.php?s=/Teacher/User/updateNickName.html
+ERR: 模板不存在:./Application/Teacher/View/default/User/updateNickName.html
+

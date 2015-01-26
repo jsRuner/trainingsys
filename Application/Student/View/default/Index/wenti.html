@@ -1,0 +1,42 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style"></block>
+<block name="header">
+  <div class="row wwf-row-ban">
+    
+    <div class="col-md-8 col-md-offset-2">
+      
+      
+        <img src="__STATIC__/jisuanke/img/ban2.jpg">
+      
+    </div>
+
+
+  </div>
+  
+</block>
+<block name="body">
+
+<div class="row">
+
+  <div class="col-md-10 col-md-offset-1">
+   <ul class="course-wide-list">
+                 <volist name="wentiInfo" id="vo">
+                    <li class="course-item clearfix" style="border:none">
+
+                      <h5 style="color:red">{$key+1}、{$vo.title}</h5>
+
+                      <p>问题描叙:&nbsp;&nbsp;<empty name="vo['content']">无<else/>{$vo.content}</empty></p>
+
+                      <p>万工客服：&nbsp;&nbsp;<empty name="vo['response']">无<else/>{$vo.response}</empty></p>
+                     
+                    </li>
+                    </volist>
+              </ul>
+
+
+  </div>
+  
+</div>
+
+</block>

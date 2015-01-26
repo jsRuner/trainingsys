@@ -1,0 +1,137 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style"></block>
+
+<block name="body">
+
+  <div class="row" style="margin-top:40px">
+
+    <div class="col-md-6 col-md-offset-3">
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">注册</h3>
+        </div>
+        <div class="panel-body">
+            <!--警告框-->
+      <div id="errorMsg" style="display:none" class="alert alert-warning alert-dismissible" role="alert">
+  
+</div>
+
+          <form id="login-form"  method="post" action="__SELF__" >
+
+            <ul class="list-group">
+              <li class="list-group-item">
+
+               <div class="form-group">
+                <label class="control-label required" for="register_nickname">用户名</label>
+                <div class="controls">
+                  <input type="text" id="register_nickname" name="username"  class="form-control" ajaxurl="{:u('User/checkUserNameUnique')}" datatype="s3-14|zh2-7" nullmsg="请输入用户名"  errormsg="用户名不符合要求" />
+                  <p class="help-block">该怎么称呼你？ 中、英文均可，最长14个英文或7个汉字</p>
+                </div>
+            </div>
+              </li>
+              <li class="list-group-item">
+
+                <div class="form-group">
+                <label class="control-label required" for="register_password">密码</label>
+                <div class="controls">
+                  <input type="password" id="register_password" name="password"  class="form-control" datatype="*5-20"   errormsg="密码的格式不符合要求" nullmsg="密码不可以为空"/>
+                  <p class="help-block">5-20位英文、数字、符号，区分大小写</p>
+                </div>
+            </div>
+              </li>
+              <li class="list-group-item">
+                <div class="form-group">
+                <label class="control-label required" for="register_confirmPassword">确认密码</label>
+                <div class="controls">
+                  <input type="password" id="register_confirmPassword" name="repassword"  class="form-control" datatype="*" recheck="password"  errormsg="密码两次输入不一致" nullmsg="密码不可以为空">
+                  <p class="help-block">再输入一次密码</p>
+                </div>
+            </div>
+
+              </li>
+              <li class="list-group-item">
+
+                <div class="form-group">
+                <label class="control-label required" for="register_email">邮箱地址</label>
+                <div class="controls">
+                  <input type="text" id="register_email" name="email" class="form-control"  datatype="e" nullmsg="请填写你的常用邮箱" errormsg="邮箱的格式错误" >
+                   
+                  <p class="help-block">填写你常用的邮箱</p>
+                </div>
+           </div>
+              </li>
+
+              <li class="list-group-item">
+
+                <div class="form-group">
+            <div class="controls">
+              <button type="submit" id="register-btn"  class="btn btn-primary btn-large btn-block" >注册</button>
+            </div>
+          </div>
+                
+
+              </li>
+
+
+
+              <li class="list-group-item">
+                <div class="ptl">
+                  
+                  <span class="text-muted">已经注册帐号？</span>
+                  <a href="{:U('User/login')}">立即登录</a>
+                </div>
+              </li>
+
+            </ul>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</block>
+
+<block name="script">
+
+  <script type="text/javascript">
+
+  var demo = $("#login-form").Validform(
+    {
+     // ajaxPost:false,
+
+      tiptype:function(msg,o,cssctl){
+      var objtip=$("#errorMsg");
+      
+
+      objtip.html(msg);
+
+      
+      objtip.show();
+    },
+
+      // callback:function(data){
+
+      //   if (data.status=='y') {
+          
+      //     if(data.url){
+
+      //       setTimeout(function(){
+          
+      //       window.location.href = data.url;
+      //   },1000);
+
+      //     }
+      //   } 
+      // },
+    });
+ 
+
+  </script>
+
+</block>

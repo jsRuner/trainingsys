@@ -1,0 +1,168 @@
+<extend name="Base:common"/>
+<!--载入登录需要的样式-->
+<block name="style">
+
+    <link rel="stylesheet" type="text/css" href="__CSS__/student.css">
+    <link href="__STATIC__/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+</block>
+<block name="header">
+
+    <div class="row my-ban">
+        <div class="col-md-8 col-md-offset-1">
+            <!-- <img src="#">
+            -->
+            <div>
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}"/>
+</span>
+
+                <h1>
+                    {:get_nickname()}
+
+                    <small>{:get_time_in_day()}！</small>
+                </h1>
+            </div>
+
+            <p>人类被赋予了一种工作，那就是精神的成长。</p>
+
+        </div>
+
+    </div>
+
+</block>
+<block name="body">
+
+    <div class="row">
+
+        <!-- 左侧列表区域 -->
+
+        <div class="col-md-8 col-md-offset-1">
+
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">
+                    <a class="btn btn-success btn-sm" href="{:u('Student/Daily/index')}">返回列表</a>
+                </div>
+
+                <div class="panel-body">
+
+                    <!--警告框-->
+                    <div id="errorMsg" style="display:none" class="alert alert-warning alert-dismissible" role="alert">
+                    </div>
+                        <!--日记区域-->
+
+
+                    <form action="__SELF__" id="daily-form" method="post" id="daily-form">
+
+                        <div class="form-group">
+                            <label for="daily-title">标题</label>
+                            <input type="text" name="title" id="daily-title" datatype="*3-15" class="form-control"/>
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="myEditor">内容</label>
+                            <script type="text/plain" id="myEditor" style="width:847px;height:240px;">
+    <p>请输写日记内容</p>
+
+                            </script>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="pull-right">
+                                <a href="{:u('Student/Daily/index')}">取消</a>
+                                <button type="submit" class="btn btn-success" onclick="window.onbeforeunload=null;">保存</button>
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-md-2">
+
+
+            <div class="panel panel-default">
+                <div class="panel-heading">什么是学习日记?</div>
+                <div class="panel-body">
+                    每天的学习计划与工作内容。
+                </div>
+            </div>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">相关统计</h3>
+                </div>
+                <div class="panel-body">
+
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- 右侧介绍区域 -->
+    </div>
+
+
+
+</block>
+
+<block name="script">
+
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/umeditor/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__STATIC__/umeditor/umeditor.min.js"></script>
+    <script type="text/javascript" src="__STATIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript">
+        //实例化编辑器
+        var um = UM.getEditor('myEditor');
+        um.addListener('blur',function(){
+            if( $('#myEditor').html() ==''){
+
+                $('#myEditor').html('<p>请填写日记内容</p>')
+            }
+        });
+        um.addListener('focus',function(){
+            if($('#myEditor').html()=='<p>请填写日记内容</p>'){
+
+            $('#myEditor').html('')
+            }
+
+        });
+
+        //页面离开的提醒
+        window.onunload=window.onbeforeunload=function(){
+
+            return "你正在写日记，现在离开不会保存任何数据?" ;
+        }
+
+        //表单验证
+        var demo = $("#daily-form").Validform(
+
+                {
+                    tiptype:function(msg,o,cssctl){
+                        var objtip=$("#errorMsg");
+
+
+                        objtip.html(msg);
+
+
+                        objtip.show();
+                    }
+
+                }
+        );
+
+
+
+
+    </script>
+
+
+</block>

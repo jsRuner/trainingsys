@@ -1,0 +1,112 @@
+<extend name="Base:common" />
+<block name="style">
+	<link rel="stylesheet" type="text/css" href="__STATIC__/Validform_v5.3.2/validform_style.css"></block>
+<block name="body">
+	<div class="container-fluid">
+		<div class="row">
+			<!--主体部分 左右分栏-->
+			<div class="col-md-3 sideBar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/index')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课程列表
+						</a>
+					</li>
+					
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/add')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							发布课程
+						</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- 右侧 -->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span>发布新课程</span>
+					</div>
+					<div class="panel-body">
+						<div class="alert alert-warning alert-dismissible" role="alert" id="errorMsg" style="display:none" >
+							<button type="button" class="close">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button> <strong>注意!</strong> <b></b>
+						</div>
+						<!-- 表单开始 -->
+						<form role="form" id="myform" action="{:u('Teacher/Course/add')}" method="post">
+							<div class="form-group">
+								<label for="course-title">标题</label>
+								<input type="text" class="form-control" id="course-title" name="title" placeholder="输入课程标题" datatype="s5-16" errormsg="标题至少5个字符,最多16个字符!" nullmsg="你没有输入标题！" >
+								<p class="help-block">课程的标题可以设置5到16个字符.</p>
+							</div>
+							<div class="form-group">
+								<label for="course-about">介绍</label>
+								<textarea name="about" class="form-control" id="course-about" cols="30" rows="10" placeholder="输入课程介绍"></textarea>
+								<p class="help-block">课程的介绍最多1000个汉字.</p>
+							</div>
+							<div class="form-group">
+								<label for="course-price">价格</label>
+								<input type="text" class="form-control" id="course-price" name="price" placeholder="0.00">
+								<p class="help-block">价格的单位：人民币</p>
+							</div>
+							<div class="form-group">
+								<label for="course-category">分类</label>
+								<div class="row">
+									<div class="col-xs-4">
+										<select name="category_id" id="course-category" class="form-control col-sm-2" placeholder="请选择">
+											<volist name="categoryList" id="vo">
+												<option value="{$vo['id']}">{$vo['title']}</option>
+											</volist>
+										</select>
+									</div>
+									<!-- to:do 分类 -->
+									<!-- <div class="col-xs-4">
+									<input type="text" class="form-control" placeholder=".col-xs-3"></div>
+								<div class="col-xs-4">
+									<input type="text" class="form-control" placeholder=".col-xs-4"></div>
+								-->
+							</div>
+							<p class="help-block">请选择课程的分类</p>
+						</div>
+						<button type="submit" class="btn btn-default">提交</button>
+					</form>
+					<!-- 表单结束 -->
+				</div>
+				<div class="panel-footer text-center">
+					提示：课程未发布用户无法学习，恢复为已发布状态即可。 <b style="color:red">课程被删除后将再无法还原</b>
+					。
+				</div>
+			</div>
+		</div>
+		<!-- 右侧结束 -->
+	</div>
+</div>
+</block>
+<block name="script">
+<script type="text/javascript" src="__STATIC__/Validform_v5.3.2/validform_v5.3.2.js" ></script>
+<script type="text/javascript">
+//修改警告的按钮关闭事件
+	$(".close").bind('click',function(){
+		//隐藏而非删除警告框
+		$("#errorMsg").hide();
+	});
+
+	/*验证表单*/
+		var demo   = $("#myform").Validform(
+		{
+		tiptype:function(msg,o,cssctl){
+		var objtip =$("#errorMsg");
+		objtip.children('b').html(msg);
+		objtip.show();
+		},
+		
+		}
+		);
+			
+	</script></block>

@@ -1,0 +1,76 @@
+<extend name="Base:common" />
+
+<!--载入登录需要的样式-->
+<block name="style"></block>
+
+<block name="side">
+
+  <block>
+
+    <block name="body">
+
+      <div id="content-container" class="container">
+
+        <div class="es-row-wrap container-gap">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="page-header">
+                <h1>关于我们</h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row row-3-9">
+            <!-- <div class="col-md-3">
+              <ul class="nav nav-pills nav-stacked">
+                <li <if condition="$currentcategory eq all">class="active"</if>>
+                  <a href="{:u('Index/course')}">全部</a>
+                </li>
+
+
+                <volist name="categoryInfo" id="vo" >
+                  
+
+                <li <if condition="$currentcategory eq $vo['code']">class="active"</if>>
+                  <a href="{:u('Index/course',array('currentcategory'=>$vo['code']))}">{$vo.name}</a>
+                </li>
+                </volist>
+              </ul>
+            </div> -->
+            <div class="col-md-12">
+              <!-- <div class="category-filters">
+                <a href="{:u('Index/course',array('currentcategory'=>$currentcategory,'sort'=>latest))}"   <if condition="$sort eq latest" > class="selected"</if> >最新</a>
+                <a href="{:u('Index/course',array('currentcategory'=>$currentcategory,'sort'=>popular))}"    <if condition="$sort eq popular" > class="selected"</if>     >热门</a>
+                <a href="{:u('Index/course',array('currentcategory'=>$currentcategory,'sort'=>recommendedSeq))}"  <if condition="$sort eq recommendedSeq" > class="selected"</if>   >推荐</a>
+              </div> -->
+
+              <!-- <ul class="course-wide-list">
+                 <volist name="wentiInfo" id="vo">
+                    <li class="course-item clearfix" style="border:none">
+
+                      <h5 style="color:red">{$key+1}、{$vo.title}</h5>
+
+                      <p>{$vo.response}</p>
+                     
+                    </li>
+                    </volist>
+              </ul> -->
+
+              <p style="font: 14px/1.5 Microsoft Yahei,Helvetica Neue, Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;">
+                
+                合肥万工网络科技有限公司是中国领先的在线教育基础服务提供商，专注于在线教育，致力于为所有人提供便捷的在线教学与学习工具。自成立以来，分别推出了万工网络课堂、NIEH电子教室、NISP电子管理系统等。
+创始团队拥有海内外的教育和工作背景。公司坚持以创新为企业发展动力，以共赢共生为合作理念，为加速中国在线教育发展，创造全新教育方式做出贡献。
+              </p>
+              
+              <p style="font: 14px/1.5 Microsoft Yahei,Helvetica Neue, Hiragino Sans GB,WenQuanYi Micro Hei,sans-serif;">地址：合肥市庐阳区长江中路436号金城大厦9007<br>
+电话：0551-62820779 <br>
+邮箱：wangong@ahnieh.com<br>
+传真：+86 010 84585288-8002</p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </block>

@@ -1,0 +1,96 @@
+<extend name="Base:common" />
+<block name="body">
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!--主体部分 左右分栏-->
+			<div class="col-md-3 sideBar">
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/index')}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							返回列表
+						</a>
+					</li>
+					
+				</ul>
+				<ul class="list-group">
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/editor',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							基本信息
+						</a>
+					</li>
+					<li class="list-group-item">
+						<a href="{:u('Teacher/Course/setPicture',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课程图片
+						</a>
+					</li>
+					<li class="list-group-item"><a href="{:u('Teacher/Course/videos',array('id'=>$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							视频列表
+						</a></li>
+
+						<li class="list-group-item">
+						<a href="{:u('Teacher/Course/lessons',array('id'=>
+							$courseData['id']))}">
+							<span class="glyphicon glyphicon-chevron-right pull-right"></span>
+							课时列表
+						</a>
+					</li>
+					
+				</ul>
+
+			</div>
+			<!-- 右侧 -->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<span>编辑课程封面图片</span>
+					</div>
+					<div class="panel-body">
+
+
+						<empty name="courseData['picture']">
+            <p>你尚未设置课程的封面图片</p>
+
+             <a href="{:u('Teacher/Course/setPicture',array('id'=>$courseData['id'],'step'=>2))}" class="btn btn-success">去添加</a>
+
+
+            <else />
+            <img src="{$courseData['picture']}">
+         <p>原图</p>
+         
+
+         <img src="{$courseData['large_picture']}">
+         <p>162*162</p>
+        
+         <img src="{$courseData['middle_picture']}">
+         <p>48*48</p>
+         <img src="{$courseData['small_picture']}">
+         <p>20*20</p>
+     
+
+         <a href="{:u('Teacher/Course/setPicture',array('id'=>$courseData['id'],'step'=>2))}" class="btn btn-success">编辑</a>
+          </empty>
+						
+				</div>
+			</div>
+		</div>
+			<!-- 右侧结束 -->
+		</div>
+	</div>
+
+	
+</block>
+
+<block name="script">
+	<script type="text/javascript">
+	
+
+
+	</script>
+</block>
+

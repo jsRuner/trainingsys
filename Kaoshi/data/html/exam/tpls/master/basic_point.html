@@ -1,0 +1,39 @@
+			<ul class="breadcrumb">
+				<li><a href="index.php?exam-master">考试模块</a> <span class="divider">/</span></li>
+				<li><a href="index.php?exam-master-basic-subject">科目管理</a> <span class="divider">/</span></li>
+				<li><a href="index.php?exam-master-basic-section&subjectid=4">章节管理</a> <span class="divider">/</span></li>
+				<li class="active">知识点管理</li>
+			</ul>
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">知识点管理</a>
+				</li>
+				<li class="pull-right">
+					<a href="index.php?exam-master-basic-addpoint&sectionid=3">添加知识点</a>
+				</li>
+			</ul>
+			<legend>章节1</legend>
+	        <table class="table table-hover">
+	            <thead>
+	                <tr>
+	                    <th>知识点ID</th>
+						<th>知识点名称</th>
+						<th>操作</th>
+	                </tr>
+	            </thead>
+	            <tbody>
+                    					<tr>
+						<td>46</td>
+						<td>知识点1，知识点2，知识点3</td>
+						<td>
+							<div class="btn-group">
+								<a class="btn" href="index.php?exam-master-basic-modifypoint&knowsid=46&page=" title="修改知识点"><em class="icon-edit"></em></a>
+								<a class="btn ajax" href="index.php?exam-master-basic-delpoint&sectionid=3&knowsid=46&page=" title="删除知识点"><em class="icon-remove"></em></a>
+							</div>
+						</td>
+					</tr>
+						        	</tbody>
+	        </table>
+	        <div class="pagination pagination-right">
+	            <ul></ul>
+	        </div>

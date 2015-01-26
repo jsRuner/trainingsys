@@ -1,0 +1,84 @@
+/*我的课堂样式
+*/
+
+/**
+ * 我的课堂头部的样式
+ */
+.my-ban{
+	background-image: url('../images/mycloudheadbg.png');
+	margin-bottom: 30px;
+}
+
+/**
+ * 主题内容样式
+ */
+.my-body{
+	min-height: 300px;
+}
+
+/**
+ * 课程图片剧中
+ * 
+ */
+.imgdiv{
+	align:center;
+}
+
+/*课程列表的剧中*/
+.course-list{
+	margin-left: -10px;
+	margin-top: 10px;
+}
+
+/*圆形的头像*/
+.image{ 
+width:43px; 
+height:43px; 
+border-radius:50px; 
+} 
+
+.my-notelist{
+	min-height: 400px;
+}
+/*笔记列表*/
+.my-notelist li{
+	/*height: 100px;*/
+
+}
+
+.my-notelist div{
+	margin-left: 50px;
+}
+.my-notelist li h3{
+	margin-top: 0px;
+}
+
+.editHref a{
+	background-image: url('../images/note.png') no-repeat 4449px 4449px !important;
+
+}
+
+
+/*列表的分页*/
+.mypage{
+    /*height: 29px;	*/
+}
+
+/*修改thinkphp的分页样式 基于bootstrap*/
+
+.current,.prev,.next,.num{
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #428bca;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.current{
+    color: red;
+}
+
+

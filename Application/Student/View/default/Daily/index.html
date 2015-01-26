@@ -1,0 +1,196 @@
+<extend name="Base:common" />
+<!--载入登录需要的样式-->
+<block name="style">
+
+  <link rel="stylesheet" type="text/css" href="__CSS__/student.css"></block>
+
+
+<block name="header">
+
+  <div class="row my-ban">
+    <div class="col-md-8 col-md-offset-1">
+      <!-- <img src="#">
+      -->
+      <div >
+        <span class="content1-picture pull-left"> 
+<img class="image" src="{:get_userphoto()}" /> 
+</span> 
+        <h1>
+          {:get_nickname()}
+          <small>{:get_time_in_day()}！</small>
+        </h1>
+      </div>
+
+      <p>人类被赋予了一种工作，那就是精神的成长。</p>
+
+    </div>
+
+  </div>
+
+</block>
+<block name="body">
+
+ <div class="row">
+   
+   <!-- 左侧列表区域 -->
+
+   <div class="col-md-8 col-md-offset-1">
+
+    <div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">
+
+      <span>日记列表</span>
+        <a class="btn btn-success btn-sm pull-right" href="{:u('Student/Daily/add')}">写日记</a>
+      </div>
+
+  <div class="panel-body">
+    
+  <!-- List group -->
+  <ul class="list-group my-notelist">
+
+    <volist name="dailyList" id="vo">
+
+      
+    <li class="list-group-item">
+      <div style="margin-left: 10px;">
+        <p><a href="{:u('Student/Daily/selectDaily',array('id'=>$vo['id']))}">{$vo['title']}</a></p>
+        <p><span>{$vo['create_time'|date='Y-m-d',###]}</span><a href="{:u('Student/Daily/editorDaily',array('id'=>$vo['id']))}" style="margin-left:20px" ><span class="glyphicon glyphicon-edit"></span>编辑</a><a href="javascript:void(0)" dt="第{$key+1}条" va="{$vo['id']}" class="deleHref"><span class="glyphicon glyphicon-trash"></span>删除</a></p>
+      </div>
+
+
+    </li>
+    </volist>
+
+
+
+
+
+  </ul>
+          <!--分页-->
+          <nav class="mypage">
+              <ul class="pagination pagination-sm pull-right">
+                  {$page}
+              </ul>
+          </nav>
+  </div>
+
+</div>
+
+
+
+     
+   </div>
+
+   <div class="col-md-2">
+
+
+    <div class="panel panel-default">
+  <div class="panel-heading">什么是学习日记?</div>
+  <div class="panel-body">
+    每天的学习计划与工作内容。
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">相关统计</h3>
+  </div>
+  <div class="panel-body">
+
+  </div>
+</div>
+     
+   </div>
+
+
+   <!-- 右侧介绍区域 -->
+ </div>
+
+ <!-- 模态 -->
+  <div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">操作确认：</h4>
+      </div>
+      <div class="modal-body">
+        <p>你确定删除日记？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary" id="okBtn" onclick="makeSure()">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.mo
+  <!-- 模态结束 -->
+
+</block>
+
+<block name="script">
+ <script type="text/javascript">
+
+     //删除按钮的逻辑重做
+     $(".deleHref").bind('click',function(){
+         //将需要删除的数据传递到模态中
+         var msg = $(this).attr('dt');
+         var id = $(this).attr('va');
+
+
+
+
+         $("#okBtn").attr('deleId',id);//后面获取该值删除
+
+
+
+         $(".modal-title").html("删除日记操作确定：");
+         $(".modal-body p").html("你确定删除"+msg+"学习日记?");
+
+
+
+
+
+         $('#myModal').modal('show');
+     })
+
+     //定义异步删除的函数
+     function makeSure(){
+         var url = "{:u('Student/Daily/deleteDaily')}";
+         var id = $("#okBtn").attr('deleId');
+
+         //根据id 找到 va=id的元素
+         var obj = $("a[va='"+id+"']");
+         //找到该元素的祖先 li
+        var  objLi =obj.parents("li");
+
+
+
+         $.post(url,{id:id},function(result){
+             //删除的反馈
+             $(".modal-body p").html("操作结果:<strong style='color:red;'>"+result.msg+"</strong>,2秒后窗口自动关闭!");
+
+             //根据反馈删除指定元素
+             if(result.status){
+                objLi.remove();
+             }
+             //3秒后关闭模态 todo
+             setTimeout("$('#myModal').modal('hide')",2000);
+             //关闭后刷新页面
+             //window.location.reload();
+
+         });
+
+     }
+
+
+
+
+ </script>
+
+
+
+
+
+</block>

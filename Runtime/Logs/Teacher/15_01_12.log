@@ -1,0 +1,31 @@
+[ 2015-01-12T09:02:50+08:00 ] ::1 /index.php?s=/Teacher/Course/start.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) /Applications/MAMP/htdocs/trainingsys/Application/Teacher/Controller/CourseController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0022s ]
+SQL: UPDATE `wg_course` SET `status`='1' WHERE `id` = 43 [ RunTime:0.0021s ]
+
+[ 2015-01-12T13:31:30+08:00 ] ::1 /index.php?s=/Teacher/Course/getVideos.html&cid=41
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) /Applications/MAMP/htdocs/trainingsys/Application/Teacher/Controller/CourseController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0079s ]
+SQL: SELECT COUNT(id) AS tp_Count FROM `wg_course_videos` WHERE `cid` = 41 AND `status` IN (0,1) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`title`,`status`,`length`,`create_time` FROM `wg_course_videos` WHERE `cid` = 41 AND `status` IN (0,1) ORDER BY seq DESC LIMIT 0,1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `wg_member` [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: uid /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 161 行.
+SQL: SELECT `nickname` FROM `wg_member` WHERE ( 1=1 AND uid='' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `wg_course` [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: cid /Applications/MAMP/htdocs/trainingsys/ThinkPHP/Library/Think/Model/RelationModel.class.php 第 161 行.
+SQL: SELECT `title` FROM `wg_course` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2015-01-12T13:31:30+08:00 ] ::1 /index.php?s=/Teacher/Course/getPage.html&cid=41
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001787s ]
+NOTIC: [2048] Declaration of Teacher\Controller\CourseController::delete() should be compatible with Teacher\Controller\TeacherController::delete($model, $where = Array, $msg = Array) /Applications/MAMP/htdocs/trainingsys/Application/Teacher/Controller/CourseController.class.php 第 18 行.
+SQL: SHOW COLUMNS FROM `wg_course_videos` [ RunTime:0.0017s ]
+SQL: SELECT COUNT(id) AS tp_Count FROM `wg_course_videos` WHERE `cid` = 41 AND `status` IN (0,1) LIMIT 1   [ RunTime:0.0004s ]
+
